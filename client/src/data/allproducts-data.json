@@ -1,0 +1,596 @@
+[
+  {
+    "id": 0,
+    "productName": "Fortune Goldnut Refined Groundnut Oil (Pouch)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_35766.jpg",
+    "quantity": "1L",
+    "price": "₹170",
+    "description": "Fortune Goldnut Refined Groundnut Oil is extremely natural and pure since it is made from the choicest peanuts. It is light and packed with all the essential nutrients. The lightweight formula is ideal for everyday consumption. A good source of proteins and vitamins to keep the body healthy. It helps keep your body fit and healthy."
+  },
+  {
+    "id": 1,
+    "productName": "Borges Extra Virgin Olive Oil (Bottle)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_40.jpg",
+    "quantity": "500ml",
+    "price": "₹750",
+    "description": "Borges Extra Virgin Olive Oil is an amazingly healthy oil that can increase the flavour and taste of your dishes, It contains 73% monounsaturated fatty acids that are excellent for heart health, It is also rich in Vitamins E and K that improve brain function, skin and hair health, and help in blood-clotting, Extra virgin olive oil is thick and greenish in colour, with a strong flavour and aroma, It is best suited for making salad dressings, dips, and cold dishes, You can also use it for baking and drizzle it over pasta for a delicious taste."
+  },
+  {
+    "id": 2,
+    "productName": "Patanjali Kachi Ghani Pure Mustard Oil (Jar)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_117696.jpg",
+    "quantity": "5L",
+    "price": "₹725",
+    "description": "Patanjali Kachi Ghani Pure Mustard Oil is made from the first press of mustard seeds which keeps the delectable aroma intact, It has the goodness of LOSORB technology which ensures that foods absorb lesser amount of oil, Contains omega-3 and omega-6 fatty acids that are good for your heart health, It has a strong fragrance and a pungent taste, Use it for shallow and deep-frying, grilling, roasting, and stir-frying, Neutralizes toxins and keeps your stomach healthy, Can be used to make pickles, as it keeps them fresh for longer."
+  },
+  {
+    "id": 3,
+    "productName": "Fortune Soya Health Refined Soyabean Oil (Pouch)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_52.jpg",
+    "quantity": "1 L",
+    "price": "₹135",
+    "description": "Enriched with Omega 3 fatty acids, the Fortune Soya Health Refined Soyabean Oil is one of the best cooking mediums when it comes to baking sweets and cakes. The oil has a neutral flavour and is odourless and well as healthy. This oil is fortified with the rich goodness of Vitamin A and Vitamin D that keeps the eyes and bones healthy. It is a lightweight and odourless oil that makes it a great choice for keeping the heart healthy. It is an ideal oil for baking, sauteing and stir frying."
+  },
+  {
+    "id": 4,
+    "productName": "Emami Healthy & Tasty Refined Rice Bran Oil (Pouch)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_109135.jpg",
+    "quantity": "500 ml",
+    "price": "₹150",
+    "description": "You can now cook and serve delicious and healthy dishes with Emami Healthy & Tasty Refined Rice Bran Oil. This oil adds a flavourful taste to your meals of the day. The oil is filled with natural nutrients that are cholesterol free and keep your heart healthy and fit. Enriched with nutrients, this rice bran oil is suitable for all types of cooking. It has oryzanol that works towards keeping your heart healthy. This refined oil has natural nutrients that add to the taste of your food. It is light and ideal for everyday use."
+  },
+  {
+    "id": 5,
+    "productName": "Dhara Kachi Ghani Mustard Oil (Jar)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_35110.jpg",
+    "quantity": "5 L",
+    "price": "₹775",
+    "description": "Dhara Kachi Ghani Mustard Oil is a healthy choice for cooking your daily meals, Has a strong aroma and a pungent flavour, Can be used to make pickles as it is a natural preservative that keeps them fresh for a longer duration, Acts as a digestive aid and neutralizes toxins in the body, Contains omega-3 and omega-6 fatty acids that are good for your heart health, Use it for shallow and deep-frying, grilling, roasting, and stir-frying."
+  },
+  {
+    "id": 6,
+    "productName": "Sundrop GoldLite Refined Vegetable Oil (Pouch)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_15524.jpg",
+    "quantity": "1 L",
+    "price": "₹140",
+    "description": "Made from a blend of refined sunflower oil and refined corn oil, Sundrop Gold Lite Edible Oil can be used to pan out a number of dishes. It makes for a healthy medium to temper a wide variety of vegetables and curries."
+  },
+  {
+    "id": 7,
+    "productName": "Raag Gold Palmolein Oil (Pouch)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_18586.jpg",
+    "quantity": "1 L",
+    "price": "₹110",
+    "description": "Raag Gold Palmolein Oil (Pouch) Palm oil is extracted from the flesh of the fruit of Elaeis Guineensis using pressure. Palm oil is used for shallow and deep-frying in Indian kitchens. The oil is semi-solid at room temperature and is highly resistant to oxidation and prolonged exposure. It helps in preventing vitamin A deficiency, cancer, brain disease, and aging. It helps in treating malaria, high blood pressure, high cholesterol & dementia. Increases the body's metabolism and helps with weight loss."
+  },
+  {
+    "id": 8,
+    "productName": "Pansari Sesame Oil/Til Oil (Bottle)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_308223.jpg",
+    "quantity": "1 L",
+    "price": "₹180",
+    "description": "Imparts a pleasant flavour to all the dishes that it is added to. Perfect for being used as a pickling agent and it adds to the taste as well.Pure sesame oil that has a pungent and fresh aroma. Has a pleasant flavour and fragrance."
+  },
+   {
+    "id": 9,
+    "productName": "Family Farm Maida",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_403177.jpg",
+    "quantity": "500g",
+    "price": "₹24",
+    "description": "Family Farm Maida is an all-purpose flour that is used to make numerous dishes and to thicken gravies and soups. This white flour has a smooth and fine texture. Milled and refined to form a soft, powdered flour. This flour can be used for a variety of cooking and frying purposes. It makes a smooth batter, and is used to make crispy, deep-fried savoury snacks. It is also used in bakery products like pastries, bread, and cakes."
+  },
+  {
+    "id": 10,
+    "productName": "Patanjali Besan",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_10917.jpg",
+    "quantity": "500g",
+    "price": "₹55",
+    "description": "Rajdhani Besan is the healthy option for the whole family as it is purely made from chana dal. Make many delicious fried snacks like Kadhi, dhokla, fafda, and namkeens to treat your tastebuds. It is rich in proteins, dietary fibre, and various minerals like calcium and iron. Packaged in a hygienic facility. It helps the body to get through fatigue. Consumption can help you with the regulation of blood pressure because of the magnesium content."
+  },
+  {
+    "id": 11,
+    "productName": "Organic Tattva Besan",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_13452.jpg",
+    "quantity": "500g",
+    "price": "₹40",
+    "description": "Organic Tattva Besan is made from the best-quality channa dal, the besan is organic and free from harmful chemicals and pesticides, contains minerals like iron, copper, and phosphorous that are essential for good health, also contains Vitamin B-complex and folate that boost your immunity, has a sweetish taste and can be used to make both sweets and savouries, use it to make fried snacks and dhoklas."
+  },
+  {
+     "id": 12,
+     "productName": "India Gate Broken Mogra Basmati Rice",
+     "image": "//cdn.grofers.com/app/images/products/full_screen/pro_18770.jpg",
+     "quantity": "10 kg",
+     "price": "₹740",
+     "description": "Convert your everyday simple recipes into a delight with long and aromatic India Gate Broken Mogra Basmati Rice, a perfect fit for everyday consumption, it is popularly used in the preparation of pulao, biryani, kheer and other delectable dishes, carefully chosen to give you an authentic taste and flavour, slender grains that add to the texture of your food, rich impeccable taste with a characteristic fragrance that lightens up your taste buds, no sticking or breakage while cooking."
+   },
+   {
+      "id": 13,
+      "productName": "Rajdhani Daliya",
+      "image": "//cdn.grofers.com/app/images/products/full_screen/pro_17.jpg",
+      "quantity": "500 g",
+      "price": "₹39",
+      "description": "Tasty and healthy, Rajdhani Daliya is a great way to keep the hunger pangs at bay while having a healthy bite in each spoon. Containing broken wheat kernels it is easy to digest and makes for a delicious meal. Great source of nutrients for the body. Made from wholesome wheat grains. Adds a nutty flavour to your dish. Blended with soups and dals to thicken the consistency."
+   },
+   {
+       "id": 14,
+       "productName": "Rajdhani Mota Poha",
+       "image": "//cdn.grofers.com/app/images/products/full_screen/pro_31.jpg",
+       "quantity": "500 g",
+       "price": "₹60",
+       "description": "Prepared from the finest-quality rice grains, the Rajdhani Mota Poha is widely used in Indian homes for preparing various dishes. This poha is full of nutrients and is low in fat. Hygienically packed for the highest quality and best taste. Rich source of carbohydrates, dietary fibre, vitamins, and minerals to keep the body healthy and fit. Can be used for making breakfast dishes and evening snacks."
+   },
+   {
+   	"id": 15,
+   	"productName": "India Gate Feast Rozzana Basmati Rice",
+   	"image": "//cdn.grofers.com/app/images/products/full_screen/pro_10967.jpg",
+   	"quantity": "1 kg",
+   	"price": "₹440",
+   	"description": "Aged perfectly for daily consumption, India Gate Feast Rozzana Basmati Rice is premium-quality rice with a rich taste and exotic aroma. Slender in shape and smooth in texture, the grains are carefully selected from the best paddy fields. Premium-quality basmati rice that is aged perfectly for daily use. Offers rich taste and exotic aroma that adds to the authentic flavour. Slender in shape and smooth in texture that looks appetizing and tastes delicious. Carefully selected from fine quality grains to make for a hearty staple."
+   },
+   {
+   	"id": 16,
+   	"productName": "India Gate Weight Watchers Special Brown Rice (Jar)",
+   	"image": "//cdn.grofers.com/app/images/products/full_screen/pro_301737.jpg",
+   	"quantity": "1 kg",
+   	"price": "₹137",
+   	"description": "India Gate Weight Watchers Special Brown Rice is not just tasty but also is the best rice option for people who count their calorie intake. It releases energy slowly thereby keeping your stomach feeling full for a longer period of time. Although the usual Brown Rice takes time to cook, India Gate Weight Watchers Special Brown Rice takes just about 15 minutes to get cooked. The rice is high in fibre and loaded with several essential minerals. It has a low GI which keeps the heart healthy and helps in maintaining a healthy blood sugar level."
+   },
+   {
+   	"id": 17,
+   	"productName": "Organic Tattva Sonamasuri Rice",
+   	"image": "//cdn.grofers.com/app/images/products/full_screen/pro_86977.jpg",
+   	"quantity": "1 kg",
+   	"price": "₹115",
+   	"description": "Choose to live with the healthiest options available and get the Organic Tattva Sonamasuri Rice. Naturally grown, this sonamasuri rice is carefully chosen and filled in every packet. The fluffy and light texture of the rice makes it a really nice option for having it with curries. The sweet aroma of the rice and its impeccable flavour is irrestistable. You can prepare hearty biryani and mouthwatering pulav."
+   },
+   {
+   	"id": 18,
+   	"productName": "India Gate Broken Mogra Basmati Rice",
+   	"image": "//cdn.grofers.com/app/images/products/full_screen/pro_18770.jpg",
+   	"quantity": "10kg",
+   	"price": "₹740",
+   	"description": "Convert your everyday simple recipes into a delight with long and aromatic India Gate Broken Mogra Basmati Rice, a perfect fit for everyday consumption, it is popularly used in the preparation of pulao, biryani, kheer and other delectable dishes, carefully chosen to give you an authentic taste and flavour, slender grains that add to the texture of your food, rich impeccable taste with a characteristic fragrance that lightens up your taste buds, no sticking or breakage while cooking."
+   },
+   {
+   	"id": 19,
+   	"productName": "Organic Tattva White Poha",
+   	"image": "//cdn.grofers.com/app/images/products/full_screen/pro_13466.jpg",
+   	"quantity": "500 g",
+   	"price": "₹70",
+   	"description": "Prepared from highest-quality rice grains, the Organic Tattva White Poha is made up of 76% carbohydrates and 23% healthy fats. It is grown and processed organically, without the use of chemical fertilizers and preservatives. Helps regulate blood sugar levels and is a good probiotic. Easily digestible, rich in iron, low in calories. Make your poha more nutritious by cooking it in olive or coconut oil and adding more vegetables to it."
+   },
+   {
+   	"id": 20,
+   	"productName": "Tata Sampann High Dietary Fibre Poha",
+   	"image": "//cdn.grofers.com/app/images/products/full_screen/pro_405806.jpg",
+   	"quantity": "500 g",
+   	"price": "₹40",
+   	"description": "Source of protein,High dietary fibre,Nutritious and delicious.Easy to prepareand Perfect for making delicious breakfast."
+   },
+  {
+    "id": 21,
+    "productName": "Catch Chat Masala (Sprinkler)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_10895.jpg",
+    "quantity": "100g",
+    "price": "68",
+    "description": "Catch Chat Masala (Sprinkler) is a zingy, tangy, slightly-hot masala that makes the perfect seasoning. Though often used as a spice in cooking, chaat masala is mostly used as a garnish on salads, chaats (a generic name for savory Indian snacks), drinks like Indian lemonade, meals like curries and dals, etc. Prepared from carefully sourced spices grounded finely. Highly nutritious, contains nutrients like iron and calcium that are good for your health. Comes in easy-to-use sprinkler case with different settings."
+  },
+  {
+    "id": 22,
+    "productName": "MDH Kitchen King Masala",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_74.jpg",
+    "quantity": "100g",
+    "price": "68",
+    "description": "MDH Kitchen King Masala is a ready mix of aromatic spices powdered perfectly to bring any dish alive. Consisting of premium quality spices ground together it is naturally a connoiseur’s choice. Used sparingly it can lend an authentic taste to any curry with its enhanced taste and aroma. Sprinkle a little of this spice mix on your vegetable fry and enjoy the rich taste with hot chapatis. A balanced masala prepared using modern technology for retaining flavour and freshness."
+  },
+  {
+    "id": 23,
+    "productName": "Catch Turmeric Powder/Haldi",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_18857.jpg",
+    "quantity": "200g",
+    "price": "56",
+    "description": "Processed using the traditional grinding techniques, Catch Turmeric Powder/Haldi is known for its earthy taste and therapeutic properties. It is used to bring flavour to broths and curries and add a rich golden yellow colour. It is ground at low temperature to keep the flavour intact. A mild and healthy spice that imparts a healthy colour to food. Has therapeutic properties and can be used for medicinal purposes as well."
+  },
+  {
+    "id": 24,
+    "productName": "MDH Chana Masala",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_81342.jpg",
+    "quantity": "100 g",
+    "price": "₹68",
+    "description": "MDH Chana Masala is the perfect masala to enjoy your bhature. It is a blend of numerous aromatic spices that gives your chole a delicious flavour and an appetising aroma. Made from selected spices and dried ingredients carefully sourced from the best farms in the country. Prepared and packed in hygienic facility. Uses aunthentic recipe for traditional taste."
+  },
+  {
+    "id": 25,
+    "productName": "Catch Cumin Seeds/Jeera",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_56692.jpg",
+    "quantity": "100 g",
+    "price": "₹40",
+    "description": "Catch Cumin Seeds/Jeera elevates the taste of any dish. This earthy spice with a mild aroma is an Indian staple. It is perfect for making Tadkas to give a punch to your dishes. Promotes Digestion. The most common traditional use of cumin is for indigestion. It is a Rich Source of Iron. Contains Beneficial Plant Compounds. Improves Blood circulation. Uses carefully sourced ingredients from selected farms."
+  },
+  {
+    "id": 26,
+    "productName": "Shasha Green Small Cardamom Whole/Elaichi (Pouch)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_18857.jpg",
+    "quantity": "50 g",
+    "price": "₹340",
+    "description": "Eat Delicious, Flavourful Food.Perfect to add in a variety of dishes. A must-have in every Kitchen."
+  },
+  {
+    "id": 27,
+    "productName": "Everest Chicken Masala",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_59.jpg",
+    "quantity": "100 g",
+    "price": "₹72",
+    "description": "Everest chicken masala is the ultimate spice for preparing delectable chicken curry that gives the right balance between the spice-elements and other ingredients in the dish. The spices used in this blend provide several health benefits. Build Muscles and increases Appetite. Keeps bones healthy and improves Immunity. Cuts Risk Of Arthritis."
+  },
+  {
+    "id": 28,
+    "productName": "Dabur Hommade Ginger Garlic Paste",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_43375.jpg",
+    "quantity": "100 g",
+    "price": "₹24",
+    "description": "Dabur Hommade Ginger Garlic brings you the freshest paste of garlic and ground ginger in one hygienically sealed bag. Thick and grainy texture. Adds zest and tanginess to Indian dishes like curries and gravies. Can be used at the same stage of cooking when you normally use fresh ginger and garlic. Fresh ingredients with ginger sourced from North-Eastern states and garlic sourced from Gujarat."
+  },
+  {
+    "id": 29,
+    "productName": "Dabur Hommade Tomato Puree (Tetra Pak)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_233518.jpg",
+    "quantity": "200 g",
+    "price": "₹25",
+    "description": "Tomato Puree, an essential cooking base for several dishes in the Indian cuisine. Dabur has now bought this base to your kitchen shelves in a convenient tetra pack. Made with carefully sourced tomatoes, the puree is sold in a thick consistency to be instantly added to your curries and gravies. Has no preservatives, is pure and natural. Add the tomato puree to your sautéed onions to give your sabzis a tangy taste."
+  },
+  {	
+    "id": 30,
+    "productName": "Family Farm Almonds",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_400111.jpg",
+    "quantity": "200g",
+    "price": "₹592",
+    "description": "Make a healthy and tasty addition to both sweet and savoury dishes with Almonds Dry Fruit. It is consumed raw and is sprinkled over a variety of recipes like desserts, sundaes, biscuits, cakes and ice cream based preparations."
+  },
+  {
+    "id": 31,
+    "productName": "Nutraj Premium California Pistachios",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_423354.jpg",
+    "quantity": "200g",
+    "price": "₹379",
+    "description": "A wonder snack for a nutritious and wholesome experience is this Nutraj pack of roasted and salted California pistachios, rich in proteins, fiber and anti-Oxidants. Low cholesterol nut with zero trans fat."
+  },
+	{
+		"id": 32,
+		"productName": "Nutraj California Almonds",
+		"image": "//cdn.grofers.com/app/images/products/full_screen/pro_156145.jpg",
+		"quantity": "500 g",
+		"price": "₹380",
+		"description": "100% natural, nutritious and delicious, naturally high in Vitamin E and Manganese, making them a great addition to your diet, almonds are packed with protein essential for muscle building."
+	},
+	{
+		"id": 33,
+		"productName": "Nutraj California In Shell Walnuts (Pouch)",
+		"image": "//cdn.grofers.com/app/images/products/full_screen/pro_423351.jpg",
+		"quantity": "1 kg",
+		"price": "₹999",
+		"description": "Rich in vitamin E, melatonin omega,3 fats and antioxidants. Whole walnuts preserve the freshness and Also helps in maintaining brain health and Controls the growth of cancer cells & has many more benefits."
+	},
+	{
+		"id":34,
+		"productName": "Organic Tattva Peanuts",
+		"image": "//cdn.grofers.com/app/images/products/full_screen/pro_13465.jpg",
+		"quantity": "500 g",
+		"price": "₹145",
+		"description": "Organic Tattva Peanuts arare highly nutritious and tasty. Add them to your breakfast dishes or just roast them and consume as a snack to enjoy the delicious taste. Peanuts contain vitamins and minerals that are necessary for your well-being. They are rich in proteins and healthy fats like omega-3 and omega-6 that reduce your risk of heart disease. Can be used as the perfect ingredient in savoury dishes for a delectable taste."
+	},
+	{
+		"id": 35,
+		"productName": "Nutraj Signature Fig (Anjeer)",
+		"image": "//cdn.grofers.com/app/images/products/full_screen/pro_423352.jpg",
+		"quantity": "400 g",
+		"price": "₹699",
+		"description": "Fresh, sweet, and dried figs have been naturally preserved with no additives. Figs contain pectin that stimulates healthy movement and expels cholesterol out of body. They are good for stamina and boost energy, and also help fight sexual weakness."
+	},
+	{
+		"id": 36,
+		"productName": "Nutraj Seedless Turkish Dried Apricots (Pouch)",
+		"image": "//cdn.grofers.com/app/images/products/full_screen/pro_423348.jpg",
+		"quantity": "200 g",
+		"price": "₹119",
+		"description": "Most juicy and full of sunshine goodness. Packed with loads of fibre and goodness.Good source of potassium and magnesium. Enjoy healthy snacking for better living."
+	},
+   {
+    "id": 37,
+    "productName": "Cadbury Bournvita Chocolate Health Drink (Refill)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_392658.jpg",
+    "quantity": "500g",
+    "price": "₹200",
+    "description": "CADBURY BOURNVITA now with inner strength formula packed with nutrients that are known for maintaining strong bones, strong muscles and healthy brain. CADBURY BOURNVITA provides the same great tasty and  delicious chocolate drink enriched with vitamin D, iodine, iron, protein, and phosphorus."
+  },
+  {	
+    "id": 38,
+    "productName": "Nescafe Gold Coffee (Jar)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_24357.jpg",
+    "quantity": "50g",
+    "price": "₹290",
+    "description": "Premium imported soluble coffee powder. Made with choicest Arabica and Robusta beans, freeze dried for rich aroma and smooth taste. Indulge your senses in a truly distinctive premium coffee blend.Comes in a specially designed eden jar with its aroma-lock lid which keeps your coffee delightfully tasty to the last drop."
+  },
+  {
+    "id": 39,
+    "productName": "Hershey's Genuine Chocolate Syrup",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_415759.jpg",
+    "quantity": "1.3kg",
+    "price": "₹325",
+    "description": "Rich, delicious and free flowing, Tastes great and Can be used for chocolate milk shake, desserts, etc."
+  },
+  {
+    "id": 40,
+    "productName": "Tang Orange Instant Drink Mix",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_23726.jpg",
+    "quantity": "500 g",
+    "price": "₹210",
+    "description": "Tang comes in refreshing Orange flavor.Keep everyone refreshed this summer with Tang and its great fruit taste with the goodness of vitamins A, B, C and Iron. A glass (approximately 180ml) of Tang gives your child 60% of Vitamin C required for the entire day."
+  },
+  {
+    "id": 41,
+    "productName": "Tata Premium Tea (Pouch)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_13980.jpg",
+    "quantity": "1 kg",
+    "price": "₹417",
+    "description": "Tata offers Tata Premium Tea straight from the Assam gardens, with finely chosen tea leaves and carefully packed. Giving you a quick boost for the day. Tata induces the 30 years of experience in making the best tea. It is a combination of small and big leaves, where small tea grains give a strong flavour to the tea and large tea grain makes it more flavoursome. The cup of Tata premium tea is filled with the goodness of nutrients and health."
+  },
+  {
+    "id": 42,
+    "productName": "Coca-Cola Soft Drink (Bottle)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_283.jpg",
+    "quantity": "600 ml",
+    "price": "₹40",
+    "description": "Original cola flavoured drink and one of the most sought-after soft drink, Coca Cola is the perfect companion for all your gatherings and celebrations.Make the most of happy moments by sharing the drink with your loved ones. Heighten the mood of the party, with this fizzy drink. Grab a sip for that enriching and uplifting feeling. Prepare yourself to experience delight and merriment in every sip."
+  },
+  {
+    "id": 43,
+    "productName": "PediaSure Premium Chocolate Health Drink (Refill)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_367598.jpg",
+    "quantity": "1 kg",
+    "price": "₹1420",
+    "description": "PediaSure Chocolate flavoured health drink helps make for an exciting breakfast supplement as well, complimenting an incomplete breakfast for kids who are fussy eating and always on the go. PediaSure provides adequate nutrition in the form of a balanced diet which is one of the most influential factors for your child’s immunity and growth. Pediasure is the No.1 Pediatrician prescribed nutrition powder for kids."
+  },
+  {
+    "id": 44,
+    "productName": "B Natural Guava Juice",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_33208.jpg",
+    "quantity": "1 L",
+    "price": "₹110",
+    "description": "Richly nutritious and tasty, B Natural Guava Gush is an instant fruit beverage, with the goodness of natural guavas. Rich in vitamin C content, it is a healthy beverage that helps in absorption of dietary iron. It does not contain any added preservatives, colours or flavours."
+  },
+  {
+    "id": 45,
+    "productName": "Paper Boat Coconut Water",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_373342.jpg",
+    "quantity": "200 ml",
+    "price": "₹40",
+    "description": "Quench your thirst in a natural way with Paper Boat Coconut Water, a ready to serve fruit beverage punched with the flavour of pure and fresh Coconut. Irresistibly delicious, it is a great summer refresher. Offers a tantalizing treat to your taste buds."
+  },
+  {
+    "id": 46,
+    "productName": "Hamdard Rooh Afza Sharbat Rose (Bottle)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_277.jpg",
+    "quantity": "1750 ml",
+    "price": "₹150",
+    "description": "Refreshing and delightful, Hamdard Rooh Afza (Bottle) Sharbat is a delectable sweet drink with the natural essence of rose. It instantly quenches the thirst and is perfect to beat the heat. Just mix it with water or milk and relish the taste. It can also be used as an ice-cream or faluda topping."
+  },
+
+  {
+    "id": 47,
+    "productName": "Amul Butter",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_160.jpg",
+    "quantity": "500 g",
+    "price": "₹235",
+    "description": "Made from the freshest of cream, the Amul butter has lovely taste which is delicate and slightly salty. This finely processed butter is natural, pure and tastes best overwith toasts and sandwiches. Has a natural and pure formulation that gives it a great taste. Made from fresh cream that has a wonderful flavour. Spread it over toast or cook your curries in it for a heavenly taste."
+  },
+  {
+    "id": 48,
+    "productName": "Amul Lassi (Tetra Pak) - Pack of 12",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_425017.jpg",
+    "quantity": "12*1L",
+    "price": "₹840",
+    "description": "Delicious and nutritious, Amul Lassi (Tetra Pak) is a refreshing milk based drink. Enriched with nutrients, it makes for a healthy and tasty accompaniment to everyday meals. It can be relished anytime of the day and tastes best when served chilled."
+  },
+  {
+    "id": 49,
+    "productName": "Veeba Cheese & Chilli Sandwich Spread",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_357433.jpg",
+    "quantity": "275g",
+    "price": "₹89",
+    "description": "Made up of choicest ingredients. Brings together cheese and chilli.Great for making sandwiches and rolls.A must have in every kitchen."
+  },
+  {
+    "id": 50,
+    "productName": "Hershey's Cookies 'n' Creme Milk Shake - Pack of 10",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_404082.jpg",
+    "quantity": "10*200 ml",
+    "price": "₹350",
+    "description": "Rich, creamy and scrumptious cookie n crème flavoured milk, Fortified with the goodness of milk, Deliciously healthy and nutritious drink, Indulging and tempting treat for the taste buds."
+  },
+  {
+    "id": 51,
+    "productName": "Gowardhan Classic Block Paneer",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_123007.jpg",
+    "quantity": "200 g",
+    "price": "₹85",
+    "description": "Made from the fresh cow milk Gowardhan Classic Block Paneer enhances the flavours of everyday cooking dishes. Enjoy this protein and nutrient-rich cubes of paneer for good health and immunity. Use this healthy ingredient in making any sumptuous Indian, Chinese, or other continental dishes. It is an unsalted, homemade delicious paneer made purely from cows milk. A powerhouse of calcium and protein and helps in the fat-burning process and thus reducing weight."
+  },
+  {
+    "id": 52,
+    "productName": "Mother Dairy Probiotic Curd (Cup)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_362191.jpg",
+    "quantity": "200g",
+    "price": "₹50",
+    "description": "Made from the freshest ingredients and have Uniformly smooth texture. Simply delicious and fresh and Packed with great nutrition and taste."
+  },
+  {
+    "id": 53,
+    "productName": "Kiwi",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_394525.jpg",
+    "quantity": "3units",
+    "price": "₹150",
+    "description": "The bright green flesh of the Kiwi with tiny black seeds gives a tropical flair to any fruit salad. It is almost creamy in consistency and has a pleasant sweet taste."
+  },
+  {
+    "id": 54,
+    "productName": "Green Apple - Imported",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_336515.jpg",
+    "quantity": "4units",
+    "price": "₹305",
+    "description": "Green Apple, also known as Granny Smith is crisp with lemon-like tartness. It is firm, medium grained and has bright white flesh and is excellent for pie baking or can be eaten as whole."
+  },
+  {
+    "id": 55,
+    "productName": "Watermelon",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_369752.jpg",
+    "quantity": "1unit",
+    "price": "₹60",
+    "description": "Watermelon is a watery and pulpy fruit with a granular texture and a sugary taste, enveloped by a thick dark green skin. Usually relished as raw, this versatile fruit is juicy, crispy and irresistibly sweet. It can also be used to make juice, jam, sorbet, iced tea, etc."
+  },
+  {
+    "id": 56,
+    "productName": "Pomegranate (Anaar)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_317559.jpg",
+    "quantity": "4 units (0.75-1 kg)",
+    "price": "₹164",
+    "description": "Pomegranate has a juicy cluster of sparkling, opaque, red coloured seeds which taste sweet. It can be used for topping desserts and to make juices and fruit salads."
+  },
+  {
+    "id": 57,
+    "productName": "Papaya",
+    "image": "//cdn.grofers.com/app/images/products/sliding_image/189821a.jpg",
+    "quantity": "1 unit (0.75-1.25 kg)",
+    "price": "₹91",
+    "description": "Packed with nutrition, Papaya is a pulpy fruit with a mild sweet taste. It can be relished as it is or can be sliced with other fruits for a healthy fruit salad."
+  },
+  {
+    "id": 58,
+    "productName": "Sun Melon (Sarda)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_339150.jpg",
+    "quantity": "1 unit (900-1100 g)",
+    "price": "₹120",
+    "description": "Sun Melon is a juicy and sweet fruit and has fewer seeds than other melons. A member of the melon family, it has a yellow-coloured skin and is generally sweet and soft with an aroma of bubble gum."
+  },
+  {
+    "id": 59,
+    "productName": "Brown Coconut",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_4943.jpg",
+    "quantity": "1 units",
+    "price": "₹90",
+    "description": "Brown coconuts have firm white meat and less water than green coconuts. The meat is used to flavour many dishes and is a commonly used ingredient in South Indian dishes."
+  },
+  
+  {
+    "id": 60,
+    "productName": "Cherry Tomato",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_9118.jpg",
+    "quantity": "200 g",
+    "price": "₹43",
+    "description": "Cherry Tomato is a cherry-sized, red coloured, juicy fruit used primarily in salads. Due to its tangy taste and delicate appearance, it is also used for garnishing pastas and noodles."
+  },
+  {
+    "id": 61,
+    "productName": "Onion",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_294626.jpg",
+    "quantity": "5 g",
+    "price": "₹500",
+    "description": "Known for its pungent aroma and spicy taste, Onion is widely used in making gravies for vegetables and stews. One of the favourite ingredient in salads, it can be mixed and fried with gram flour to make delectable snacks and Pakodas too."
+  },
+  {
+    "id": 62,
+    "productName": "Tomato",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_391307.jpg",
+    "quantity": "1 kg",
+    "price": "₹50",
+    "description": "Partly sweet and partly sour in taste, Tomatoes are very refreshing, rich in Vitamin C and are almost ubiquitous in any cuisine. Be it a base for curries, salads, pizzas, condiments and even breads, they make for a versatile ingredient."
+  },
+  {
+    "id": 63,
+    "productName": "Potato",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_391305.jpg",
+    "quantity": "1 kg",
+    "price": "₹54",
+    "description": "Potato is a starchy vegetable that is widely used in many recipes. Due to its bland taste, peeled potatoes can be mixed with a number of vegetables. Potatoes are also used in making chips and snacks."
+  },
+  {
+    "id": 64,
+    "productName": "Baby Potato",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_261115.jpg",
+    "quantity": "1 kg",
+    "price": "₹50",
+    "description": "Baby Potato is a starchy vegetable which is popularly used in many recipes. Due to their bland taste, peeled Baby Potatoes pair well with a wide number of vegetables. These are also used to make chips and snacks."
+  },
+  {
+    "id": 65,
+    "productName": "Lady Finger",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_237680.jpg",
+    "quantity": "500 g",
+    "price": "₹70",
+    "description": "A highly versatile vegetable in the Indian cuisine, Lady Finger can be sliced or chopped or can be paired with other vegetables for an exquisite taste. Toss in some green chillies or onions for a flavourful, wholesome main course dish."
+  },
+  {
+    "id": 66,
+    "productName": "Cucumber",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_10088.jpg",
+    "quantity": "500 g",
+    "price": "₹29",
+    "description": "Cucumber is a cooling vegetable that is high in water content. It is often eaten in summer. It can be eaten raw, in salads or pickled."
+  },
+  {
+    "id": 67,
+    "productName": "Broccoli",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_39396.jpg",
+    "quantity": "1 unit",
+    "price": "₹200",
+    "description": "Broccoli contains folate and has cholesterol-lowering properties. It is high in fiber and aids digestion.Broccoli is rich in dozens of nutrients. It belongs to the same vegetable family as cauliflower and kale. This exotic vegetable can be tossed in pasta and is a perfect ingredient for salads."
+  },
+  {
+    "id": 68,
+    "productName": "Cabbage",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_339152.jpg",
+    "quantity": "1 unit (400-600 gm)",
+    "price": "₹70",
+    "description": "Cabbage, a green and leafy vegetable, is not only incredibly nutritious but also fights beauty woes. Its crunchy, wavy and fresh leaves can be used in salads, sandwiches and for garnishing full course meals."
+  },
+  {
+    "id": 69,
+    "productName": "Green Zucchini",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_98874.jpg",
+    "quantity": "500 g",
+    "price": "₹95",
+    "description": "Mostly consumed in raw salads, Green Zucchini (exotic) is smooth-skinned, bitter-sweet tasting vegetable. It is also used in breads and muffins and can be steamed, boiled, fried and stuffed. This nutritious vegetable is most commonly used in curries and chutneys due to its unique and subtly sweet taste."
+  },
+  {
+    "id": 70,
+    "productName": "Bikaji sadabahar soan papdi",
+    "image": "https://mahadev-store.s3.ap-south-1.amazonaws.com/images/2018/08/d350c41e597fe1c4d71299ae055782ce_1534326554_image_urlbikaji-shon-papadi.jpg",
+    "quantity": "450g",
+    "price": "140",
+    "description": "Bring home this Bikaji Sadabahar soan papdi and kaju soan papdi combo. It is made of flaky sweet with pistachios and almonds. The kaju soan papdi is made of flakes of cashew and almonds. This pack will bring smile on your near and dear ones faces. Make a right choice by buying this attractive looking pack of delicious soan papdi and kaju soan papdi and get amazed in its awesome taste. This delicious pack of soan papdi and kaju soan papdi can even be used as a great option for gifting purposes on occasions like birthdays, anniversaries and on festivals that will make your loved ones extremely happy."
+  },
+  {
+    "id": 71,
+    "productName": "Bikaji Rasgulla",
+    "image": "https://mahadev-store.s3.ap-south-1.amazonaws.com/images/2018/08/5924bed9f21bd36708ee3ccf8cc898fa_1534327631_image_urlrasgulla.jpg",
+    "quantity": "1kg",
+    "price": "180",
+    "description": "Soft cottage cheese dumplings in sugar syrup is made of tasty ingredients, great-tasting, high-quality Indian snack with uses of 100 percent natural ingredients in the preparation."
+  },
+  {
+    "id": 72,
+    "productName": "Cadbury Dairy Milk Home Treats Chocolate",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_11020.jpg",
+    "quantity": "126g",
+    "price": "149",
+    "description": "Just one bite will take you into the world of warmth, happiness and spontaneous fun. Rich, smooth and creamy classic milk chocolate which gives you more joy in every bite. All orders are free of delivery charges. We provide multiple location delivery as an add-on to the standard and express delivery services."
+  },
+  {
+    "id": 73,
+    "productName": "Cadbury Dairy Milk Silk 24 Premium Miniatures Chocolate Gift Pack",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_321049.jpg",
+    "quantity": "240g",
+    "price": "530",
+    "description": "Cadbury Dairy Milk Miniatures - Bitesize bars of dairy milk chocolate. These make great little gifts, or a nice treat with your coffee. There are 24 delicious mini bars of dairy milk chocolate in a pack and each one comes individually wrapped."
+  }
+]

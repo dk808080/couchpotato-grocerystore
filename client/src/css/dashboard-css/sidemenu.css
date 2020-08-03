@@ -1,0 +1,29 @@
+#sideMenu {
+  background-color: #ffe3b3;
+  text-align: center;
+  border-bottom: 2px solid darkslategrey;
+  margin: 0 1.5rem;
+}
+
+.sideMenu-item {
+  color: #000 !important;
+  text-decoration: none;
+  padding: 1.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+
+  margin-left: 1rem;
+}
+.sideMenu-item:hover {
+  border-bottom: 5px solid darkslategrey;
+}
+.sideMenu-item a:active,
+.sideMenu-item a:focus {
+  color: #028174 !important;
+  font-weight: bold;
+  font-size: medium;
+}
+@media (max-width: 1000px) {
+  .sideMenu-item {
+    border-top: 1px solid darkslategrey;
+  }
+}

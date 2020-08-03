@@ -1,0 +1,29 @@
+.allpinfo {
+  margin: 0 4rem;
+  padding: 1rem 4rem 4rem 4rem;
+  background-color: #fffff2;
+  border-bottom: 2px solid darkslategrey;
+  text-align: center;
+}
+
+.personalinfo-label {
+  display: block;
+  margin-top: 2rem;
+  font-size: large;
+  margin-bottom: 1rem;
+}
+.personalinfo-input {
+  width: 20rem;
+  text-align: center;
+  border: 2px solid darkslategrey;
+  height: 3rem;
+}
+.personalinfo-Button {
+  margin: 2rem 1rem 0;
+}
+@media (max-width: 1000px) {
+  .allpinfo {
+    margin: 0 2rem;
+    padding: 1rem 2rem 2rem 2rem;
+  }
+}

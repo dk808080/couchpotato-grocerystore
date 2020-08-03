@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0,
+    "productName": "Kiwi",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_394525.jpg",
+    "quantity": "3units",
+    "price": "₹150",
+    "description": "The bright green flesh of the Kiwi with tiny black seeds gives a tropical flair to any fruit salad. It is almost creamy in consistency and has a pleasant sweet taste."
+  },
+  {
+    "id": 1,
+    "productName": "Green Apple - Imported",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_336515.jpg",
+    "quantity": "4units",
+    "price": "₹305",
+    "description": "Green Apple, also known as Granny Smith is crisp with lemon-like tartness. It is firm, medium grained and has bright white flesh and is excellent for pie baking or can be eaten as whole."
+  },
+  {
+    "id": 2,
+    "productName": "Watermelon",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_369752.jpg",
+    "quantity": "1unit",
+    "price": "₹60",
+    "description": "Watermelon is a watery and pulpy fruit with a granular texture and a sugary taste, enveloped by a thick dark green skin. Usually relished as raw, this versatile fruit is juicy, crispy and irresistibly sweet. It can also be used to make juice, jam, sorbet, iced tea, etc."
+  },
+  {
+    "id": 3,
+    "productName": "Pomegranate (Anaar)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_317559.jpg",
+    "quantity": "4 units (0.75-1 kg)",
+    "price": "₹164",
+    "description": "Pomegranate has a juicy cluster of sparkling, opaque, red coloured seeds which taste sweet. It can be used for topping desserts and to make juices and fruit salads."
+  },
+  {
+    "id": 4,
+    "productName": "Papaya",
+    "image": "//cdn.grofers.com/app/images/products/sliding_image/189821a.jpg",
+    "quantity": "1 unit (0.75-1.25 kg)",
+    "price": "₹91",
+    "description": "Packed with nutrition, Papaya is a pulpy fruit with a mild sweet taste. It can be relished as it is or can be sliced with other fruits for a healthy fruit salad."
+  },
+  {
+    "id": 5,
+    "productName": "Sun Melon (Sarda)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_339150.jpg",
+    "quantity": "1 unit (900-1100 g)",
+    "price": "₹120",
+    "description": "Sun Melon is a juicy and sweet fruit and has fewer seeds than other melons. A member of the melon family, it has a yellow-coloured skin and is generally sweet and soft with an aroma of bubble gum."
+  },
+  {
+    "id": 6,
+    "productName": "Brown Coconut",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_4943.jpg",
+    "quantity": "1 units",
+    "price": "₹90",
+    "description": "Brown coconuts have firm white meat and less water than green coconuts. The meat is used to flavour many dishes and is a commonly used ingredient in South Indian dishes."
+  }
+]

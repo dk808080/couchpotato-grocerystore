@@ -1,0 +1,44 @@
+.login-form {
+  border: 1px solid #000;
+  width: 35rem;
+  margin: 8rem auto 2rem auto;
+  padding: 3rem;
+}
+.innercontainer-login-form {
+  text-align: center;
+  margin-top: 3rem;
+}
+.cancel-button {
+  margin-right: 5rem;
+}
+
+.loginfield:hover {
+  border: 1px solid #028174;
+  box-shadow: 0 0 3px #028174;
+}
+
+.loginfield:focus {
+  outline: 1px solid #028174;
+  box-shadow: 0 0 5px #028174;
+}
+.loginfield:active {
+  outline: 1px solid #028174;
+  box-shadow: 0 0 5px #028174;
+}
+
+.logo-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 3px solid #028174;
+}
+
+@media (max-width: 700px) {
+  .login-form {
+    width: 25rem;
+    padding: 2rem;
+  }
+  .cancel-button {
+    margin-right: 2rem;
+  }
+}

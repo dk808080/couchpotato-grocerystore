@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "productName": "Cherry Tomato",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_9118.jpg",
+    "quantity": "200 g",
+    "price": "₹43",
+    "description": "Cherry Tomato is a cherry-sized, red coloured, juicy fruit used primarily in salads. Due to its tangy taste and delicate appearance, it is also used for garnishing pastas and noodles."
+  },
+  {
+    "id": 1,
+    "productName": "Onion",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_294626.jpg",
+    "quantity": "5 g",
+    "price": "₹500",
+    "description": "Known for its pungent aroma and spicy taste, Onion is widely used in making gravies for vegetables and stews. One of the favourite ingredient in salads, it can be mixed and fried with gram flour to make delectable snacks and Pakodas too."
+  },
+  {
+    "id": 2,
+    "productName": "Tomato",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_391307.jpg",
+    "quantity": "1 kg",
+    "price": "₹50",
+    "description": "Partly sweet and partly sour in taste, Tomatoes are very refreshing, rich in Vitamin C and are almost ubiquitous in any cuisine. Be it a base for curries, salads, pizzas, condiments and even breads, they make for a versatile ingredient."
+  },
+  {
+    "id": 3,
+    "productName": "Potato",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_391305.jpg",
+    "quantity": "1 kg",
+    "price": "₹54",
+    "description": "Potato is a starchy vegetable that is widely used in many recipes. Due to its bland taste, peeled potatoes can be mixed with a number of vegetables. Potatoes are also used in making chips and snacks."
+  },
+  {
+    "id": 4,
+    "productName": "Baby Potato",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_261115.jpg",
+    "quantity": "1 kg",
+    "price": "₹50",
+    "description": "Baby Potato is a starchy vegetable which is popularly used in many recipes. Due to their bland taste, peeled Baby Potatoes pair well with a wide number of vegetables. These are also used to make chips and snacks."
+  },
+  {
+    "id": 5,
+    "productName": "Lady Finger",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_237680.jpg",
+    "quantity": "500 g",
+    "price": "₹70",
+    "description": "A highly versatile vegetable in the Indian cuisine, Lady Finger can be sliced or chopped or can be paired with other vegetables for an exquisite taste. Toss in some green chillies or onions for a flavourful, wholesome main course dish."
+  },
+  {
+    "id": 6,
+    "productName": "Cucumber",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_10088.jpg",
+    "quantity": "500 g",
+    "price": "₹29",
+    "description": "Cucumber is a cooling vegetable that is high in water content. It is often eaten in summer. It can be eaten raw, in salads or pickled."
+  },
+  {
+    "id": 7,
+    "productName": "Broccoli",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_39396.jpg",
+    "quantity": "1 unit",
+    "price": "₹200",
+    "description": "Broccoli contains folate and has cholesterol-lowering properties. It is high in fiber and aids digestion.Broccoli is rich in dozens of nutrients. It belongs to the same vegetable family as cauliflower and kale. This exotic vegetable can be tossed in pasta and is a perfect ingredient for salads."
+  },
+  {
+    "id": 8,
+    "productName": "Cabbage",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_339152.jpg",
+    "quantity": "1 unit (400-600 gm)",
+    "price": "₹70",
+    "description": "Cabbage, a green and leafy vegetable, is not only incredibly nutritious but also fights beauty woes. Its crunchy, wavy and fresh leaves can be used in salads, sandwiches and for garnishing full course meals."
+  },
+  {
+    "id": 9,
+    "productName": "Green Zucchini",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_98874.jpg",
+    "quantity": "500 g",
+    "price": "₹95",
+    "description": "Mostly consumed in raw salads, Green Zucchini (exotic) is smooth-skinned, bitter-sweet tasting vegetable. It is also used in breads and muffins and can be steamed, boiled, fried and stuffed. This nutritious vegetable is most commonly used in curries and chutneys due to its unique and subtly sweet taste."
+  }
+]

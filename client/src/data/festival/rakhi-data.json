@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "productName": "Cadbury Dairy Milk Home Treats Chocolate",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_11020.jpg",
+    "quantity": "126g",
+    "price": "149",
+    "description": "Just one bite will take you into the world of warmth, happiness and spontaneous fun. Rich, smooth and creamy classic milk chocolate which gives you more joy in every bite. All orders are free of delivery charges. We provide multiple location delivery as an add-on to the standard and express delivery services."
+  },
+  {
+    "id": 1,
+    "productName": "Cadbury Dairy Milk Silk 24 Premium Miniatures Chocolate Gift Pack",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_321049.jpg",
+    "quantity": "240g",
+    "price": "530",
+    "description": "Cadbury Dairy Milk Miniatures - Bitesize bars of dairy milk chocolate. These make great little gifts, or a nice treat with your coffee. There are 24 delicious mini bars of dairy milk chocolate in a pack and each one comes individually wrapped."
+  }
+]

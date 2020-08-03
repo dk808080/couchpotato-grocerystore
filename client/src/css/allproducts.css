@@ -1,0 +1,33 @@
+.allprod {
+  margin-top: 5rem;
+  padding: 0 2rem 1rem;
+  text-align: center;
+  background-image: url("https://i5.peapod.com/c/H9/H952X.jpg");
+}
+.eachproduct {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.allprod h1 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #000808;
+  font-family: "Montserrat", sans-serif;
+}
+
+.productcardbody hr {
+  margin: 0;
+  padding: 0;
+  color: #fffff4;
+}
+
+.productcardbody a {
+  text-decoration: none;
+  color: #051a15;
+}
+
+.productcardbody {
+  color: #07362b;
+  padding-bottom: 5px;
+}

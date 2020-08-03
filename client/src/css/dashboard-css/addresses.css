@@ -1,0 +1,63 @@
+.sec-addresses {
+  margin: 0 4rem;
+  padding: 1rem 4rem 4rem 4rem;
+  background-color: #fffff2;
+  border-bottom: 2px solid darkslategrey;
+
+  text-align: center;
+}
+
+.sec-addresses button {
+  margin-top: 2rem;
+}
+.sec-addaddress {
+  margin: 0 1.5rem;
+  padding: 1rem 5rem 4rem 5rem;
+  background-color: #fff;
+  border-bottom: 2px solid darkslategrey;
+}
+
+.sec-addaddress h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #0ab68b !important;
+  font-size: 2rem;
+}
+.sec-addaddress Form Button {
+  text-align: center;
+  margin: 1rem 2rem 0;
+  padding: 0.5rem 2rem;
+}
+
+.sec-manageaddresses {
+  margin: 0 4rem;
+  padding: 1rem 10rem 4rem 10rem;
+  background-color: #fffff2;
+  border-bottom: 2px solid darkslategrey;
+}
+.sec-manageaddresses h1 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #000808;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.deletebutton {
+  margin-left: 30rem;
+}
+@media (max-width: 1000px) {
+  .sec-manageaddresses,
+  .sec-addaddress,
+  .sec-addresses {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+  .deletebutton {
+    margin-left: 20rem;
+  }
+}
+@media (max-width: 500px) {
+  .deletebutton {
+    margin-left: 10rem;
+  }
+}

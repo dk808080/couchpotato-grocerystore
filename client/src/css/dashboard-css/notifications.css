@@ -1,0 +1,23 @@
+.allnotisec {
+  margin: 0 4rem;
+  padding: 1rem 4rem 4rem 4rem;
+  background-color: #fffff2;
+  border-bottom: 2px solid darkslategrey;
+
+  text-align: center;
+}
+
+.allnotisec-card {
+  margin: 1.5rem 4rem 0;
+}
+
+@media (max-width: 1000px) {
+  .allnotisec-card {
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+  .allnotisec {
+    margin: 0 2rem;
+    padding: 1rem 2rem 2rem 2rem;
+  }
+}

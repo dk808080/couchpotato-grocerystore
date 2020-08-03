@@ -1,0 +1,52 @@
+[
+  {
+    "id": 0,
+    "productName": "Amul Butter",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_160.jpg",
+    "quantity": "500 g",
+    "price": "₹235",
+    "description": "Made from the freshest of cream, the Amul butter has lovely taste which is delicate and slightly salty. This finely processed butter is natural, pure and tastes best overwith toasts and sandwiches. Has a natural and pure formulation that gives it a great taste. Made from fresh cream that has a wonderful flavour. Spread it over toast or cook your curries in it for a heavenly taste."
+  },
+
+  {
+    "id": 1,
+    "productName": "Amul Lassi (Tetra Pak) - Pack of 12",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_425017.jpg",
+    "quantity": "12*1L",
+    "price": "₹840",
+    "description": "Delicious and nutritious, Amul Lassi (Tetra Pak) is a refreshing milk based drink. Enriched with nutrients, it makes for a healthy and tasty accompaniment to everyday meals. It can be relished anytime of the day and tastes best when served chilled."
+  },
+  {
+    "id": 2,
+    "productName": "Veeba Cheese & Chilli Sandwich Spread",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_357433.jpg",
+    "quantity": "275g",
+    "price": "₹89",
+    "description": "Made up of choicest ingredients. Brings together cheese and chilli.Great for making sandwiches and rolls.A must have in every kitchen."
+  },
+  {
+
+    "id": 3,
+    "productName": "Hershey's Cookies 'n' Creme Milk Shake - Pack of 10",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_404082.jpg",
+    "quantity": "10*200 ml",
+    "price": "₹350",
+    "description": "Rich, creamy and scrumptious cookie n crème flavoured milk, Fortified with the goodness of milk, Deliciously healthy and nutritious drink, Indulging and tempting treat for the taste buds."
+  },
+  {
+    "id": 4,
+    "productName": "Gowardhan Classic Block Paneer",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_123007.jpg",
+    "quantity": "200 g",
+    "price": "₹85",
+    "description": "Made from the fresh cow milk Gowardhan Classic Block Paneer enhances the flavours of everyday cooking dishes. Enjoy this protein and nutrient-rich cubes of paneer for good health and immunity. Use this healthy ingredient in making any sumptuous Indian, Chinese, or other continental dishes. It is an unsalted, homemade delicious paneer made purely from cows milk. A powerhouse of calcium and protein and helps in the fat-burning process and thus reducing weight."
+  },
+  {
+    "id": 5,
+    "productName": "Mother Dairy Probiotic Curd (Cup)",
+    "image": "//cdn.grofers.com/app/images/products/full_screen/pro_362191.jpg",
+    "quantity": "200 g",
+    "price": "₹50",
+    "description": "Made from the freshest ingredients and have Uniformly smooth texture. Simply delicious and fresh and Packed with great nutrition and taste."
+  }
+]
