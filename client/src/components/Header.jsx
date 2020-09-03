@@ -97,7 +97,7 @@ function Header() {
                       Logout
                     </ReactBootStrap.NavDropdown.Item>
                   </ReactBootStrap.NavDropdown>
-                  <ReactBootStrap.Nav.Link href="#memes">
+                  <ReactBootStrap.Nav.Link href="/cart">
                     <i
                       className="fa fa-shopping-cart fa-2x"
                       style={{ marginLeft: "2rem" }}
@@ -170,7 +170,9 @@ function Header() {
                     <i
                       className="fa fa-shopping-cart fa-2x"
                       style={{ marginLeft: "2rem" }}
-                    ></i>
+                    >
+                      {" "}
+                    </i>
                   </ReactBootStrap.Nav.Link>
                 </ReactBootStrap.Nav>
               </ReactBootStrap.Navbar.Collapse>
