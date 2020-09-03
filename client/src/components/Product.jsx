@@ -37,6 +37,7 @@ function Product(props) {
               class="btn btn-dark"
               onClick={(event) => {
                 const product = {
+                  emailid: localStorage.getItem("emailid"),
                   image: props.image,
                   productName: props.productName,
                   quantity: props.quantity,

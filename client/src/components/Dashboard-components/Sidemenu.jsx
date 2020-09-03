@@ -14,6 +14,7 @@ function Sidemenu() {
       .then((res) => {
         if (window.confirm(res.data)) {
           localStorage.removeItem("loggedin");
+          localStorage.removeItem("emailid");
           history.push("/");
           window.location.reload(true);
         }
@@ -50,6 +51,9 @@ function Sidemenu() {
 
             <Nav.Link href="/cart" className="sideMenu-item">
               Your cart
+            </Nav.Link>
+            <Nav.Link href="/orders" className="sideMenu-item">
+              Your orders
             </Nav.Link>
             <Nav.Link href="/reviews" className="sideMenu-item">
               Reviews

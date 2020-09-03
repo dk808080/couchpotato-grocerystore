@@ -1,14 +1,12 @@
-import React, { useEffect, useState, useContext } from "react";
-import "../../../css/dashboard-css/addresses.css";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Emptyaddresses from "./Emptyaddresses";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { Addressprovider } from "./Addresscontext";
-import Addaddresses from "./Addaddresses";
-function Addresses() {
+import { useHistory } from "react-router-dom";
+function Chooseadd() {
   const [addresses, setaddresses] = useState([]);
-  const obj = useContext(Addressprovider);
+  const history = useHistory();
+
   useEffect(() => {
     axios
       .get("/bodyaddresses")
@@ -25,32 +23,34 @@ function Addresses() {
         console.log(err);
       });
   }, []);
-
-  function addonemore() {
-    obj.addonemore();
-  }
   const addresseslist = addresses.map((address) => {
     return (
-      <div style={{ marginTop: "1rem" }}>
+      <div style={{ marginTop: "0.3rem" }}>
         <Card>
           <Card.Header as="h5">
             Your address
             <Button
-              className="deletebutton"
-              variant="outline-danger"
+              href="#"
+              style={{
+                marginLeft: "2rem",
+                fontSize: "15px",
+                backgroundColor: "darkslategrey",
+              }}
               onClick={(event) => {
                 event.preventDefault();
-                const addresstobedeleted = {
-                  id: address._id,
-                };
-                if (window.confirm("are you sure?")) {
-                  obj.deleteaddress(addresstobedeleted);
+                if (
+                  window.confirm(
+                    "are you sure that you want to get your products delivered to this address?"
+                  )
+                ) {
+                  history.push("/confirmmobileno");
                 }
               }}
             >
-              DELETE
+              Choose this address and go to step 2
             </Button>
           </Card.Header>
+
           <Card.Body className="row">
             <Card.Title
               className="col-md-6"
@@ -105,36 +105,31 @@ function Addresses() {
     );
   });
   return (
-    <div>
-      {(() => {
-        if (addresses.length === 0) {
-          return <Emptyaddresses />;
-        } else {
-          return (
-            <div>
-              <div>
-                {(() => {
-                  if (obj.isaddonemore === true) {
-                    return <Addaddresses />;
-                  } else {
-                    return (
-                      <button
-                        className="btn btn-outline-dark"
-                        onClick={addonemore}
-                      >
-                        ADD NEW ADDRESSES
-                      </button>
-                    );
-                  }
-                })()}
-              </div>
-              {addresseslist}
-            </div>
-          );
-        }
-      })()}
+    <div
+      style={{
+        backgroundColor: "#ffe3b3",
+        border: "1px solid darkslategrey",
+        margin: "0 3rem",
+        padding: "1rem 0",
+        textAlign: "center",
+      }}
+    >
+      <h4 style={{ marginTop: "1rem", fontFamily: "cursive" }}>
+        1) Choose your delivery address
+      </h4>
+      <div style={{ padding: "1.5rem" }}>{addresseslist}</div>
+      <div>
+        <strong>
+          To add an address or a new address{" "}
+          <a
+            href="/addresses"
+            style={{ color: "#aa3939", textDecoration: "underline" }}
+          >
+            Click here
+          </a>{" "}
+        </strong>
+      </div>
     </div>
   );
 }
-
-export default Addresses;
+export default Chooseadd;

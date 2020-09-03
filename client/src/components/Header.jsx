@@ -13,6 +13,7 @@ function Header() {
       .then((res) => {
         if (window.confirm(res.data)) {
           localStorage.removeItem("loggedin");
+          localStorage.removeItem("emailid");
           history.push("/");
           window.location.reload(true);
         }
@@ -165,13 +166,11 @@ function Header() {
                       <i className="fa fa-sign-in" aria-hidden="true"></i> Login
                     </ReactBootStrap.NavDropdown.Item>
                   </ReactBootStrap.NavDropdown>
-                  <ReactBootStrap.Nav.Link href="#memes">
+                  <ReactBootStrap.Nav.Link href="/cart">
                     <i
                       className="fa fa-shopping-cart fa-2x"
                       style={{ marginLeft: "2rem" }}
-                    >
-                      {" "}
-                    </i>
+                    ></i>
                   </ReactBootStrap.Nav.Link>
                 </ReactBootStrap.Nav>
               </ReactBootStrap.Navbar.Collapse>

@@ -21,6 +21,7 @@ function Addcards() {
   function save(event) {
     event.preventDefault();
     var newcard = {
+      emailid: localStorage.getItem("emailid"),
       name: name,
       cardnumber: cardnumber,
       valid: valid,

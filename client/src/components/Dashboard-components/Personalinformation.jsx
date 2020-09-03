@@ -1,8 +1,52 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
-
 import "../../css/dashboard-css/personalinfo.css";
+import axios from "axios";
+
 function Personalinformation() {
+  const [name, setname] = useState("");
+  const [email, setemail] = useState("");
+  const [mobileno, setmobileno] = useState("");
+  function savechanges(event) {
+    event.preventDefault();
+    const user = {
+      emailid: localStorage.getItem("emailid"),
+      name: name,
+      email: email,
+      mobileno: mobileno,
+    };
+    if (
+      window.confirm("Do you really want to save these changes in your profile")
+    ) {
+      axios
+        .post("/savechangesinpinfo", user)
+        .then((res) => {
+          alert(res.data);
+          window.location.reload(true);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }
+
+  useEffect(() => {
+    axios
+      .get("/bodypinfo")
+      .then((res) => {
+        res.data.map((me) => {
+          if (me._id == localStorage.getItem("emailid")) {
+            setname(me.name);
+            setemail(me.email);
+            setmobileno(me.mobileno);
+          }
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <div className="allpinfo">
       <form>
@@ -11,41 +55,22 @@ function Personalinformation() {
           type="text"
           placeholder="Enter name"
           className="personalinfo-input"
+          value={name}
+          onChange={(e) => {
+            setname(e.target.value);
+          }}
         />
-
-        <div>
-          <label className="personalinfo-label">Your gender</label>
-          <input
-            type="radio"
-            value="Male"
-            name="gender"
-            style={{ width: "1rem", height: "1rem" }}
-            className="personalinfo-input"
-          />{" "}
-          Male
-          <input
-            type="radio"
-            value="Female"
-            name="gender"
-            style={{ width: "1rem", height: "1rem", marginLeft: "1rem" }}
-            className="personalinfo-input"
-          />{" "}
-          Female
-          <input
-            type="radio"
-            value="Others"
-            name="gender"
-            style={{ width: "1rem", height: "1rem", marginLeft: "1rem" }}
-            className="personalinfo-input"
-          />{" "}
-          Others
-        </div>
 
         <label className="personalinfo-label">Your email address</label>
         <input
           type="email"
           placeholder="Enter email"
           className="personalinfo-input"
+          value={email}
+          onChange={(e) => {
+            setemail(e.target.value);
+          }}
+          readOnly
         />
 
         <label className="personalinfo-label">Your mobile number </label>
@@ -53,12 +78,19 @@ function Personalinformation() {
           type="text"
           placeholder="Enter mobile number"
           className="personalinfo-input"
+          value={mobileno}
+          onChange={(e) => {
+            setmobileno(e.target.value);
+          }}
         />
         <br />
-        <Button variant="dark" type="button" className="personalinfo-Button">
-          Edit information
-        </Button>
-        <Button variant="dark" type="submit" className="personalinfo-Button">
+
+        <Button
+          variant="dark"
+          type="submit"
+          className="personalinfo-Button"
+          onClick={savechanges}
+        >
           Save changes
         </Button>
         <div>

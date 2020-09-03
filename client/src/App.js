@@ -29,6 +29,12 @@ import Reviews from "./components/Dashboard-components/Reviews-components/Review
 import Addreview from "./components/Dashboard-components/Reviews-components/Addreview";
 import Navreview from "./components/Dashboard-components/Reviews-components/Navreview";
 import axios from "axios";
+import Buynow from "./components/Dashboard-components/Buynow";
+import Orderdetails from "./components/Dashboard-components/Orderdetails";
+import Chooseadd from "./components/Dashboard-components/Chooseadd";
+import Confirmmobileno from "./components/Dashboard-components/Confirmmobileno";
+import Paymentmethod from "./components/Dashboard-components/Paymentmethod";
+import Orders from "./components/Dashboard-components/Orders";
 function App() {
   return (
     <div>
@@ -39,6 +45,7 @@ function App() {
         <Route path="/login" component={Login} exact />
         <Route path="/signup" component={Signup} exact />
         <Route path="/dashboard" component={Dashboard} exact />
+
         <Route
           path="/cart"
           component={() => (
@@ -49,6 +56,20 @@ function App() {
             >
               <Sidemenu />
               <Cart />
+            </div>
+          )}
+          exact
+        />
+        <Route
+          path="/orders"
+          component={() => (
+            <div
+              style={{
+                backgroundImage: 'url("https://i5.peapod.com/c/H9/H952X.jpg")',
+              }}
+            >
+              <Sidemenu />
+              <Orders />
             </div>
           )}
           exact
@@ -91,6 +112,46 @@ function App() {
             >
               <Sidemenu />
               <Managecards />
+            </div>
+          )}
+          exact
+        />
+        <Route
+          path="/buynow"
+          component={() => (
+            <div>
+              <Buynow />
+              <Orderdetails />
+            </div>
+          )}
+          exact
+        />
+        <Route
+          path="/chooseaddress"
+          component={() => (
+            <div>
+              <Buynow />
+              <Chooseadd />
+            </div>
+          )}
+          exact
+        />
+        <Route
+          path="/confirmmobileno"
+          component={() => (
+            <div>
+              <Buynow />
+              <Confirmmobileno />
+            </div>
+          )}
+          exact
+        />
+        <Route
+          path="/choosepaymentmethod"
+          component={() => (
+            <div>
+              <Buynow />
+              <Paymentmethod />
             </div>
           )}
           exact

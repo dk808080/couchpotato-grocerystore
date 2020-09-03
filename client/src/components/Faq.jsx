@@ -9,7 +9,7 @@ function Faq() {
         <div class="row">
           <div class="col-lg-4">
             <div
-              class="nav nav-pills faq-nav"
+              className="nav nav-pills faq-nav"
               id="faq-tabs"
               role="tablist"
               aria-orientation="vertical"

@@ -21,6 +21,7 @@ function Addaddresses() {
   function save(event) {
     event.preventDefault();
     var newaddress = {
+      emailid: localStorage.getItem("emailid"),
       name: name,
       phonenumber: phonenumber,
       address: address,

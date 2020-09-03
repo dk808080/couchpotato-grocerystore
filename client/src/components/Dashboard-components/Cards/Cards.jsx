@@ -13,7 +13,14 @@ function Cards() {
     axios
       .get("/bodycards")
       .then((res) => {
-        setcards(res.data);
+        const mycards = [];
+        res.data.map((card) => {
+          if (card.emailid == localStorage.getItem("emailid")) {
+            mycards.push(card);
+          }
+        });
+
+        setcards(mycards);
       })
       .catch((err) => {
         console.log(err);

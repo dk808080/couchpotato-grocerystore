@@ -24,6 +24,7 @@ function Login() {
       .then((res) => {
         alert(res.data);
         localStorage.setItem("loggedin", "loggedin");
+        localStorage.setItem("emailid", email);
         history.push("/home");
         window.location.reload(true);
       })

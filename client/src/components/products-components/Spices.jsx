@@ -1,27 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../css/allproducts.css";
 import spices from "../../data/grocery/spices-data.json";
 import Navigation from "./../Homepage-components/Navigation";
 import Product from "./../Product";
+import axios from "axios";
+
 function Spices() {
-  function createproduct(product) {
+  const [items, setitem] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("/api/grocery/spices")
+      .then((res) => {
+        console.log(res.data);
+        setitem(res.data.data.spices);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  const itemslist = items.map((item) => {
     return (
       <div className="col-lg-4 col-md-6 col-sm-12 eachproduct">
         <Product
-          key={product.id}
-          image={product.image}
-          productName={product.productName}
-          quantity={product.quantity}
-          price={product.price}
+          key={item.id}
+          image={item.image}
+          productName={item.productName}
+          quantity={item.quantity}
+          price={item.price}
         />
       </div>
     );
-  }
+  });
+
   return (
     <div className="allprod">
       <Navigation />
       <h1 style={{ marginTop: "1rem" }}>Spices</h1>
-      <div className="row">{spices.map(createproduct)}</div>
+      <div className="row">{itemslist}</div>
     </div>
   );
 }

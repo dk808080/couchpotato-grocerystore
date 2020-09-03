@@ -9,6 +9,7 @@ import { useHistory } from "react-router-dom";
 function Signup() {
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
+  const [mobileno, setmobileno] = useState("");
   const [password, setpassword] = useState("");
   const [confpass, setconfpass] = useState("");
   const history = useHistory();
@@ -21,6 +22,7 @@ function Signup() {
       const user = {
         name: name,
         email: email,
+        mobileno: mobileno,
         password: password,
       };
       axios
@@ -28,6 +30,7 @@ function Signup() {
         .then((res) => {
           alert(res.data);
           localStorage.setItem("loggedin", "loggedin");
+          localStorage.setItem("emailid", email);
           history.push("/home");
           window.location.reload(true);
         })
@@ -64,7 +67,19 @@ function Signup() {
             }}
           />
         </Form.Group>
-
+        <Form.Group controlId="formBasicMobileno">
+          <Form.Label>Mobile number</Form.Label>
+          <Form.Control
+            className="loginfield"
+            type="text"
+            placeholder="Enter your mobile number"
+            value={mobileno}
+            maxlength="10"
+            onChange={(e) => {
+              setmobileno(e.target.value);
+            }}
+          />
+        </Form.Group>
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control

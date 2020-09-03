@@ -1,27 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../css/allproducts.css";
 import vegetables from "../../data/food/vegetables-data.json";
 import Navigation from "./../Homepage-components/Navigation";
 import Product from "./../Product";
+import axios from "axios";
+
 function Vegetables() {
-  function createproduct(product) {
+  const [items, setitem] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("/api/food/vegetables")
+      .then((res) => {
+        console.log(res.data);
+        setitem(res.data.data.vegetables);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  const itemslist = items.map((item) => {
     return (
       <div className="col-lg-4 col-md-6 col-sm-12 eachproduct">
         <Product
-          key={product.id}
-          image={product.image}
-          productName={product.productName}
-          quantity={product.quantity}
-          price={product.price}
+          key={item.id}
+          image={item.image}
+          productName={item.productName}
+          quantity={item.quantity}
+          price={item.price}
         />
       </div>
     );
-  }
+  });
   return (
     <div className="allprod">
       <Navigation />
       <h1 style={{ marginTop: "1rem" }}>Vegetables</h1>
-      <div className="row">{vegetables.map(createproduct)}</div>
+      <div className="row">{itemslist}</div>
     </div>
   );
 }

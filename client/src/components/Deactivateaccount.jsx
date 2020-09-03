@@ -1,5 +1,37 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
+import axios from "axios";
 function Deactivateaccount() {
+  const history = useHistory();
+  function dontdelete(event) {
+    event.preventDefault();
+    alert("we are happy to know that you want to be with us");
+    history.push("/home");
+  }
+  function deleteacc(event) {
+    event.preventDefault();
+    const user = {
+      emailid: localStorage.getItem("emailid"),
+    };
+    if (
+      window.confirm(
+        "please think once again!! if you really want to delete your account press ok"
+      )
+    ) {
+      axios
+        .post("/deleteacc", user)
+        .then((res) => {
+          alert(res.data);
+          localStorage.removeItem("emailid");
+          localStorage.removeItem("loggedin");
+          history.push("/home");
+          window.location.reload(true);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }
   return (
     <div
       style={{
@@ -49,6 +81,7 @@ function Deactivateaccount() {
                     style={{
                       marginRight: "25px",
                     }}
+                    onClick={dontdelete}
                   >
                     Never mind, keep my account
                   </button>
@@ -59,6 +92,7 @@ function Deactivateaccount() {
                       width: "220px",
                       marginTop: "10px",
                     }}
+                    onClick={deleteacc}
                   >
                     Delete my account
                   </button>
