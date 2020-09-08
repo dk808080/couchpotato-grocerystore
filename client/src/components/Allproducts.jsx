@@ -12,7 +12,7 @@ function Allproducts() {
       .get("/api/allProducts")
       .then((res) => {
         console.log(res.data);
-        setitem(res.data.data.allProducts);
+        setitem(res.data.allProducts);
       })
       .catch((err) => {
         console.log(err);

@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const fs = require("fs");
 const path = require("path");
-const { dirname } = require("path");
 const saltRounds = 10;
 
 const app = express();
@@ -18,7 +17,7 @@ if (
 ) {
   app.use(express.static("client/build"));
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname + "/client/build/index.html"));
+    res.sendFile(path.join("/client/build/index.html"));
   });
 }
 
@@ -33,9 +32,7 @@ mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
 /* appppppppppppppppiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
 
-const diwali = JSON.parse(
-  fs.readFileSync(__dirname + "/data/festival/diwali-data.json")
-);
+const diwali = JSON.parse(fs.readFileSync("/data/festival/diwali-data.json"));
 app.get("/api/festival/diwali", (req, res) => {
   res.status(200).json({
     status: "sucess",
@@ -49,9 +46,7 @@ app.post("/api/festival/diwali", (req, res) => {
   res.send("Done!");
 });
 
-const rakhi = JSON.parse(
-  fs.readFileSync(__dirname + "/data/festival/rakhi-data.json")
-);
+const rakhi = JSON.parse(fs.readFileSync("/data/festival/rakhi-data.json"));
 app.get("/api/festival/rakhi", (req, res) => {
   res.status(200).json({
     status: "sucess",
@@ -61,9 +56,7 @@ app.get("/api/festival/rakhi", (req, res) => {
   });
 });
 
-const beverages = JSON.parse(
-  fs.readFileSync(__dirname + "/data/food/beverages-data.json")
-);
+const beverages = JSON.parse(fs.readFileSync("/data/food/beverages-data.json"));
 app.get("/api/food/beverages", (req, res) => {
   res.status(200).json({
     status: "sucess",
@@ -73,9 +66,7 @@ app.get("/api/food/beverages", (req, res) => {
   });
 });
 
-const dairy = JSON.parse(
-  fs.readFileSync(__dirname + "/data/food/dairy-data.json")
-);
+const dairy = JSON.parse(fs.readFileSync("/data/food/dairy-data.json"));
 app.get("/api/food/dairy", (req, res) => {
   res.status(200).json({
     status: "sucess",
@@ -85,9 +76,7 @@ app.get("/api/food/dairy", (req, res) => {
   });
 });
 
-const fruits = JSON.parse(
-  fs.readFileSync(__dirname + "/data/food/fruits-data.json")
-);
+const fruits = JSON.parse(fs.readFileSync("/data/food/fruits-data.json"));
 app.get("/api/food/fruits", (req, res) => {
   res.status(200).json({
     status: "sucess",
@@ -98,7 +87,7 @@ app.get("/api/food/fruits", (req, res) => {
 });
 
 const vegetables = JSON.parse(
-  fs.readFileSync(__dirname + "/data/food/vegetables-data.json")
+  fs.readFileSync("/data/food/vegetables-data.json")
 );
 app.get("/api/food/vegetables", (req, res) => {
   res.status(200).json({
@@ -109,9 +98,7 @@ app.get("/api/food/vegetables", (req, res) => {
   });
 });
 
-const oil = JSON.parse(
-  fs.readFileSync(__dirname + "/data/grocery/edibleoils-data.json")
-);
+const oil = JSON.parse(fs.readFileSync("/data/grocery/edibleoils-data.json"));
 app.get("/api/grocery/oil", (req, res) => {
   res.status(200).json({
     status: "sucess",
@@ -121,9 +108,7 @@ app.get("/api/grocery/oil", (req, res) => {
   });
 });
 
-const flour = JSON.parse(
-  fs.readFileSync(__dirname + "/data/grocery/flours-data.json")
-);
+const flour = JSON.parse(fs.readFileSync("/data/grocery/flours-data.json"));
 app.get("/api/grocery/flour", (req, res) => {
   res.status(200).json({
     status: "sucess",
@@ -133,9 +118,7 @@ app.get("/api/grocery/flour", (req, res) => {
   });
 });
 
-const grains = JSON.parse(
-  fs.readFileSync(__dirname + "/data/grocery/grains-data.json")
-);
+const grains = JSON.parse(fs.readFileSync("/data/grocery/grains-data.json"));
 app.get("/api/grocery/grains", (req, res) => {
   res.status(200).json({
     status: "sucess",
@@ -145,9 +128,7 @@ app.get("/api/grocery/grains", (req, res) => {
   });
 });
 
-const spices = JSON.parse(
-  fs.readFileSync(__dirname + "/data/grocery/spices-data.json")
-);
+const spices = JSON.parse(fs.readFileSync("/data/grocery/spices-data.json"));
 app.get("/api/grocery/spices", (req, res) => {
   res.status(200).json({
     status: "sucess",
@@ -158,7 +139,7 @@ app.get("/api/grocery/spices", (req, res) => {
 });
 
 const winter = JSON.parse(
-  fs.readFileSync(__dirname + "/data/winter-special/winter-data.json")
+  fs.readFileSync("/data/winter-special/winter-data.json")
 );
 app.get("/api/winter-special", (req, res) => {
   res.status(200).json({
@@ -169,9 +150,7 @@ app.get("/api/winter-special", (req, res) => {
   });
 });
 
-const allProducts = JSON.parse(
-  fs.readFileSync(__dirname + "/data/allproducts-data.json")
-);
+const allProducts = JSON.parse(fs.readFileSync("/data/allproducts-data.json"));
 app.get("/api/allProducts", (req, res) => {
   res.status(200).json({
     status: "sucess",
