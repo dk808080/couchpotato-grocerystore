@@ -6,7 +6,7 @@ function Reviews() {
 
   useEffect(() => {
     axios
-      .get("/bodyoverviews")
+      .get("/api/bodyoverviews")
       .then((res) => {
         setitems(res.data);
       })

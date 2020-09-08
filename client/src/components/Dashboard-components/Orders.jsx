@@ -6,7 +6,7 @@ function Orders() {
 
   useEffect(() => {
     axios
-      .get("/bodyorders")
+      .get("/api/bodyorders")
       .then((res) => {
         const myorders = [];
         res.data.map((order) => {

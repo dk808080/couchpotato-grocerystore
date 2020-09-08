@@ -6,7 +6,7 @@ function Cart() {
 
   useEffect(() => {
     axios
-      .get("/bodycart")
+      .get("/api/bodycart")
       .then((res) => {
         const mycart = [];
         res.data.map((cart) => {
@@ -66,7 +66,7 @@ function Cart() {
                     )
                   ) {
                     axios
-                      .post("/deleteitemfromcart", product)
+                      .post("/api/deleteitemfromcart", product)
                       .then((res) => {
                         alert(res.data);
                         window.location.reload(true);

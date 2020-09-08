@@ -26,7 +26,7 @@ function Signup() {
         password: password,
       };
       axios
-        .post("/signupuser", user)
+        .post("/api/signupuser", user)
         .then((res) => {
           alert(res.data);
           localStorage.setItem("loggedin", "loggedin");

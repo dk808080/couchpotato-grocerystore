@@ -10,7 +10,7 @@ function Paymentmethod() {
   const [items, setitems] = useState([]);
   useEffect(() => {
     axios
-      .get("/bodycart")
+      .get("/api/bodycart")
       .then((res) => {
         const myorder = [];
         res.data.map((order) => {
@@ -69,7 +69,7 @@ function Paymentmethod() {
                 items: items,
               };
               axios
-                .post("/ordertheitems", orders)
+                .post("/api/ordertheitems", orders)
                 .then((res) => {
                   console.log(res);
                   swal(

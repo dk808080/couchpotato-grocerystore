@@ -17,7 +17,7 @@ function Addreview() {
     };
 
     axios
-      .post("/addreview", review)
+      .post("/api/addreview", review)
       .then((res) => {
         alert(res.data);
         history.push("/reviews");

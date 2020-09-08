@@ -11,7 +11,7 @@ function Addresses() {
   const obj = useContext(Addressprovider);
   useEffect(() => {
     axios
-      .get("/bodyaddresses")
+      .get("/api/bodyaddresses")
       .then((res) => {
         const myadd = [];
         res.data.map((add) => {

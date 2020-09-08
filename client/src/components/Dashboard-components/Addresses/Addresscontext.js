@@ -29,7 +29,7 @@ class Addresscontext extends React.Component {
 
   saveaddress = (newaddress) => {
     axios
-      .post("/saveaddress", newaddress)
+      .post("/api/saveaddress", newaddress)
       .then((res) => {
         alert(res.data);
         window.location.reload(true);
@@ -41,7 +41,7 @@ class Addresscontext extends React.Component {
 
   deleteaddress = (addresstobedeleted) => {
     axios
-      .post("/deleteaddress", addresstobedeleted)
+      .post("/api/deleteaddress", addresstobedeleted)
       .then((res) => {
         alert(res.data);
         window.location.reload(true);

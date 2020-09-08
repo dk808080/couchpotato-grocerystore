@@ -9,10 +9,13 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb://localhost:27017/couchpotatoDB", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  "mongodb+srv://admin-dimpal:abhinav@dimpal@couchpotato0.wqtxd.mongodb.net/couchpotatoDB?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
 /* appppppppppppppppiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
@@ -230,25 +233,25 @@ app.get("/", (req, res) => {
   res.send("this is home of server");
 });
 
-app.get("/bodyoverviews", (req, res) => {
+app.get("/api/bodyoverviews", (req, res) => {
   Review.find({}, function (err, reviews) {
     res.send(reviews);
   });
 });
 
-app.get("/bodyaddresses", (req, res) => {
+app.get("/api/bodyaddresses", (req, res) => {
   Address.find({}, function (err, addresses) {
     res.send(addresses);
   });
 });
 
-app.get("/bodycards", (req, res) => {
+app.get("/api/bodycards", (req, res) => {
   Card.find({}, function (err, cards) {
     res.send(cards);
   });
 });
 
-app.post("/addreview", (req, res) => {
+app.post("/api/addreview", (req, res) => {
   const review = new Review({
     username: req.body.username,
     title: req.body.title,
@@ -261,7 +264,7 @@ app.post("/addreview", (req, res) => {
   });
 });
 
-app.post("/saveaddress", (req, res) => {
+app.post("/api/saveaddress", (req, res) => {
   const address = new Address({
     emailid: req.body.emailid,
     name: req.body.name,
@@ -277,7 +280,7 @@ app.post("/saveaddress", (req, res) => {
   });
 });
 
-app.post("/savecard", (req, res) => {
+app.post("/api/savecard", (req, res) => {
   const card = new Card({
     emailid: req.body.emailid,
     name: req.body.name,
@@ -292,7 +295,7 @@ app.post("/savecard", (req, res) => {
   });
 });
 
-app.post("/deleteaddress", (req, res) => {
+app.post("/api/deleteaddress", (req, res) => {
   const id = req.body.id;
   Address.deleteOne({ _id: id }, function (err) {
     if (err) {
@@ -305,7 +308,7 @@ app.post("/deleteaddress", (req, res) => {
   });
 });
 
-app.post("/deletecard", (req, res) => {
+app.post("/api/deletecard", (req, res) => {
   const id = req.body.id;
   Card.deleteOne({ _id: id }, function (err) {
     if (err) {
@@ -316,7 +319,7 @@ app.post("/deletecard", (req, res) => {
   });
 });
 
-app.post("/signupuser", (req, res) => {
+app.post("/api/signupuser", (req, res) => {
   bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
     const newUser = new User({
       _id: req.body.email,
@@ -335,7 +338,7 @@ app.post("/signupuser", (req, res) => {
   });
 });
 
-app.post("/validateuser", (req, res) => {
+app.post("/api/validateuser", (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
   User.findOne({ email: email }, (err, foundUser) => {
@@ -351,11 +354,11 @@ app.post("/validateuser", (req, res) => {
   });
 });
 
-app.get("/logout", (req, res) => {
+app.get("/api/logout", (req, res) => {
   res.send("do you really want to logout from couch-potato");
 });
 
-app.post("/addtocart", (req, res) => {
+app.post("/api/addtocart", (req, res) => {
   const product = new Cartitem({
     emailid: req.body.emailid,
     image: req.body.image,
@@ -371,18 +374,18 @@ app.post("/addtocart", (req, res) => {
   });
 });
 
-app.get("/bodycart", (req, res) => {
+app.get("/api/bodycart", (req, res) => {
   Cartitem.find({}, function (err, items) {
     res.send(items);
   });
 });
 
-app.get("/bodyorders", (req, res) => {
+app.get("/api/bodyorders", (req, res) => {
   Order.find({}, function (err, items) {
     res.send(items);
   });
 });
-app.post("/ordertheitems", (req, res) => {
+app.post("/api/ordertheitems", (req, res) => {
   const emailid = req.body.items[0].emailid;
   Cartitem.deleteMany({ emailid: emailid }, function (err) {
     if (err) {
@@ -398,12 +401,12 @@ app.post("/ordertheitems", (req, res) => {
   });
 });
 
-app.get("/bodypinfo", (req, res) => {
+app.get("/api/bodypinfo", (req, res) => {
   User.find({}, function (err, users) {
     res.send(users);
   });
 });
-app.post("/deleteitemfromcart", (req, res) => {
+app.post("/api/deleteitemfromcart", (req, res) => {
   const id = req.body.id;
   Cartitem.deleteOne({ _id: id }, function (err) {
     if (err) {
@@ -414,7 +417,7 @@ app.post("/deleteitemfromcart", (req, res) => {
   });
 });
 
-app.post("/savechangesinpinfo", (req, res) => {
+app.post("/api/savechangesinpinfo", (req, res) => {
   User.findOneAndUpdate(
     { _id: req.body.emailid },
     { name: req.body.name, mobileno: req.body.mobileno },
@@ -428,7 +431,7 @@ app.post("/savechangesinpinfo", (req, res) => {
   );
 });
 
-app.post("/deleteacc", (req, res) => {
+app.post("/api/deleteacc", (req, res) => {
   Address.deleteMany({ emailid: req.body.emailid }, function (err) {
     if (err) {
       console.log(err);
@@ -452,7 +455,17 @@ app.post("/deleteacc", (req, res) => {
     }
   });
 });
+if (
+  process.env.NODE_ENV === "production" ||
+  process.env.NODE_ENV === "staging"
+) {
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname + "/client/build/index.html"));
+  });
+}
+const port = process.env.PORT || 5000;
 
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log("server started on port 5000");
 });

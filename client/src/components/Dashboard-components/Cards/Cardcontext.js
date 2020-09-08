@@ -29,7 +29,7 @@ class Cardcontext extends React.Component {
 
   savecard = (newcard) => {
     axios
-      .post("/savecard", newcard)
+      .post("/api/savecard", newcard)
       .then((res) => {
         alert(res.data);
         window.location.reload(true);
@@ -41,7 +41,7 @@ class Cardcontext extends React.Component {
 
   deletecard = (cardtobedeleted) => {
     axios
-      .post("/deletecard", cardtobedeleted)
+      .post("/api/deletecard", cardtobedeleted)
       .then((res) => {
         alert(res.data);
         window.location.reload(true);

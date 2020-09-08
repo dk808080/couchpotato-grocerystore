@@ -9,7 +9,7 @@ function Header() {
   function logout(event) {
     event.preventDefault();
     axios
-      .get("/logout")
+      .get("/api/logout")
       .then((res) => {
         if (window.confirm(res.data)) {
           localStorage.removeItem("loggedin");

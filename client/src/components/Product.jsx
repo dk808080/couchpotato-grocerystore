@@ -46,7 +46,7 @@ function Product(props) {
                 };
                 event.preventDefault();
                 axios
-                  .post("/addtocart", product)
+                  .post("/api/addtocart", product)
                   .then((res) => {
                     alert(res.data);
                     history.push("/cart");

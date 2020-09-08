@@ -9,7 +9,7 @@ function Chooseadd() {
 
   useEffect(() => {
     axios
-      .get("/bodyaddresses")
+      .get("/api/bodyaddresses")
       .then((res) => {
         const myadd = [];
         res.data.map((add) => {

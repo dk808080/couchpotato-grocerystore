@@ -11,7 +11,7 @@ function Orderdetails() {
 
   useEffect(() => {
     axios
-      .get("/bodycart")
+      .get("/api/bodycart")
       .then((res) => {
         const myorder = [];
         res.data.map((order) => {

@@ -20,7 +20,7 @@ function Login() {
       password: password,
     };
     axios
-      .post("/validateuser", user)
+      .post("/api/validateuser", user)
       .then((res) => {
         alert(res.data);
         localStorage.setItem("loggedin", "loggedin");

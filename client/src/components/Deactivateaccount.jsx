@@ -19,7 +19,7 @@ function Deactivateaccount() {
       )
     ) {
       axios
-        .post("/deleteacc", user)
+        .post("/api/deleteacc", user)
         .then((res) => {
           alert(res.data);
           localStorage.removeItem("emailid");

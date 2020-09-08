@@ -11,7 +11,7 @@ function Cards() {
   const obj = useContext(Cardprovider);
   useEffect(() => {
     axios
-      .get("/bodycards")
+      .get("/api/bodycards")
       .then((res) => {
         const mycards = [];
         res.data.map((card) => {

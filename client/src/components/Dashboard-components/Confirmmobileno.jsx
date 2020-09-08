@@ -9,7 +9,7 @@ function Confirmmobileno() {
 
   useEffect(() => {
     axios
-      .get("/bodypinfo")
+      .get("/api/bodypinfo")
       .then((res) => {
         res.data.map((me) => {
           if (me._id == localStorage.getItem("emailid")) {

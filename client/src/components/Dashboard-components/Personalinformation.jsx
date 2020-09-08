@@ -19,7 +19,7 @@ function Personalinformation() {
       window.confirm("Do you really want to save these changes in your profile")
     ) {
       axios
-        .post("/savechangesinpinfo", user)
+        .post("/api/savechangesinpinfo", user)
         .then((res) => {
           alert(res.data);
           window.location.reload(true);
@@ -32,7 +32,7 @@ function Personalinformation() {
 
   useEffect(() => {
     axios
-      .get("/bodypinfo")
+      .get("/api/bodypinfo")
       .then((res) => {
         res.data.map((me) => {
           if (me._id == localStorage.getItem("emailid")) {
