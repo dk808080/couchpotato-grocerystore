@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../../css/allproducts.css";
-import winter from "../../data/winter-special/winter-data.json";
 import Navigation from "./../Homepage-components/Navigation";
 import Product from "./../Product";
 import axios from "axios";

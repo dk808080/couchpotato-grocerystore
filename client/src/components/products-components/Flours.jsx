@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../css/allproducts.css";
-import flours from "../../data/grocery/flours-data.json";
+
 import Navigation from "./../Homepage-components/Navigation";
 import Product from "./../Product";
 import axios from "axios";

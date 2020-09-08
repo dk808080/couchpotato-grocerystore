@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../../css/allproducts.css";
-// import rakhi from "../../data/festival/rakhi-data.json";
 import Navigation from "./../Homepage-components/Navigation";
 import Product from "./../Product";
 import axios from "axios";

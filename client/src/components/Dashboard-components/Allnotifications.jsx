@@ -1,7 +1,7 @@
 import React from "react";
 import "../../css/dashboard-css/notifications.css";
 import Card from "react-bootstrap/Card";
-import notifications from "../../data/notifications.json";
+import notifications from "../../notifications.json";
 function Allnotifications() {
   function createNotification(notification) {
     return (

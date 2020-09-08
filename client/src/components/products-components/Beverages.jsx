@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../../css/allproducts.css";
-import beverages from "../../data/food/beverages-data.json";
 import Navigation from "./../Homepage-components/Navigation";
 import axios from "axios";
 import Product from "./../Product";
