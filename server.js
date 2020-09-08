@@ -10,6 +10,17 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.json());
 
+if (
+  process.env.NODE_ENV === "production" ||
+  process.env.NODE_ENV === "staging" ||
+  process.env.NODE_ENV === "development"
+) {
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname + "/client/build/index.html"));
+  });
+}
+
 mongoose.connect(
   "mongodb+srv://admin-dimpal:abhinav@dimpal@couchpotato0.wqtxd.mongodb.net/couchpotatoDB?retryWrites=true&w=majority",
   {
@@ -229,10 +240,6 @@ const Review = mongoose.model("Review", reviewsSchema);
 const Address = mongoose.model("Address", addressSchema);
 
 const Card = mongoose.model("Card", cardSchema);
-
-app.get("/", (req, res) => {
-  res.send("this is home of server");
-});
 
 app.get("/api/bodyoverviews", (req, res) => {
   Review.find({}, function (err, reviews) {
@@ -456,15 +463,7 @@ app.post("/api/deleteacc", (req, res) => {
     }
   });
 });
-if (
-  process.env.NODE_ENV === "production" ||
-  process.env.NODE_ENV === "staging"
-) {
-  app.use(express.static("client/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname + "/client/build/index.html"));
-  });
-}
+
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
