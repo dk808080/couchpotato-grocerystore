@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const fs = require("fs");
+const path = require("path");
 const saltRounds = 10;
 
 const app = express();
