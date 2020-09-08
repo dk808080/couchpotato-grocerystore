@@ -34,7 +34,7 @@ mongoose.set("useCreateIndex", true);
 /* appppppppppppppppiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
 
 const diwali = JSON.parse(
-  fs.readFileSync("./client/src/data/festival/diwali-data.json")
+  fs.readFileSync(__dirname + "/data/festival/diwali-data.json")
 );
 app.get("/api/festival/diwali", (req, res) => {
   res.status(200).json({
@@ -50,7 +50,7 @@ app.post("/api/festival/diwali", (req, res) => {
 });
 
 const rakhi = JSON.parse(
-  fs.readFileSync("./client/src/data/festival/rakhi-data.json")
+  fs.readFileSync(__dirname + "/data/festival/rakhi-data.json")
 );
 app.get("/api/festival/rakhi", (req, res) => {
   res.status(200).json({
@@ -62,7 +62,7 @@ app.get("/api/festival/rakhi", (req, res) => {
 });
 
 const beverages = JSON.parse(
-  fs.readFileSync("./client/src/data/food/beverages-data.json")
+  fs.readFileSync(__dirname + "/data/food/beverages-data.json")
 );
 app.get("/api/food/beverages", (req, res) => {
   res.status(200).json({
@@ -74,7 +74,7 @@ app.get("/api/food/beverages", (req, res) => {
 });
 
 const dairy = JSON.parse(
-  fs.readFileSync("./client/src/data/food/dairy-data.json")
+  fs.readFileSync(__dirname + "/data/food/dairy-data.json")
 );
 app.get("/api/food/dairy", (req, res) => {
   res.status(200).json({
@@ -86,7 +86,7 @@ app.get("/api/food/dairy", (req, res) => {
 });
 
 const fruits = JSON.parse(
-  fs.readFileSync("./client/src/data/food/fruits-data.json")
+  fs.readFileSync(__dirname + "/data/food/fruits-data.json")
 );
 app.get("/api/food/fruits", (req, res) => {
   res.status(200).json({
@@ -98,7 +98,7 @@ app.get("/api/food/fruits", (req, res) => {
 });
 
 const vegetables = JSON.parse(
-  fs.readFileSync("./client/src/data/food/vegetables-data.json")
+  fs.readFileSync(__dirname + "/data/food/vegetables-data.json")
 );
 app.get("/api/food/vegetables", (req, res) => {
   res.status(200).json({
@@ -110,7 +110,7 @@ app.get("/api/food/vegetables", (req, res) => {
 });
 
 const oil = JSON.parse(
-  fs.readFileSync("./client/src/data/grocery/edibleoils-data.json")
+  fs.readFileSync(__dirname + "/data/grocery/edibleoils-data.json")
 );
 app.get("/api/grocery/oil", (req, res) => {
   res.status(200).json({
@@ -122,7 +122,7 @@ app.get("/api/grocery/oil", (req, res) => {
 });
 
 const flour = JSON.parse(
-  fs.readFileSync("./client/src/data/grocery/flours-data.json")
+  fs.readFileSync(__dirname + "/data/grocery/flours-data.json")
 );
 app.get("/api/grocery/flour", (req, res) => {
   res.status(200).json({
@@ -134,7 +134,7 @@ app.get("/api/grocery/flour", (req, res) => {
 });
 
 const grains = JSON.parse(
-  fs.readFileSync("./client/src/data/grocery/grains-data.json")
+  fs.readFileSync(__dirname + "/data/grocery/grains-data.json")
 );
 app.get("/api/grocery/grains", (req, res) => {
   res.status(200).json({
@@ -146,7 +146,7 @@ app.get("/api/grocery/grains", (req, res) => {
 });
 
 const spices = JSON.parse(
-  fs.readFileSync("./client/src/data/grocery/spices-data.json")
+  fs.readFileSync(__dirname + "/data/grocery/spices-data.json")
 );
 app.get("/api/grocery/spices", (req, res) => {
   res.status(200).json({
@@ -158,7 +158,7 @@ app.get("/api/grocery/spices", (req, res) => {
 });
 
 const winter = JSON.parse(
-  fs.readFileSync("./client/src/data/winter-special/winter-data.json")
+  fs.readFileSync(__dirname + "/data/winter-special/winter-data.json")
 );
 app.get("/api/winter-special", (req, res) => {
   res.status(200).json({
@@ -170,7 +170,7 @@ app.get("/api/winter-special", (req, res) => {
 });
 
 const allProducts = JSON.parse(
-  fs.readFileSync(__dirname + "/client/src/data/allproducts-data.json")
+  fs.readFileSync(__dirname + "/data/allproducts-data.json")
 );
 app.get("/api/allProducts", (req, res) => {
   res.status(200).json({
