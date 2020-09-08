@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const fs = require("fs");
 const path = require("path");
+const { dirname } = require("path");
 const saltRounds = 10;
 
 const app = express();
@@ -169,7 +170,7 @@ app.get("/api/winter-special", (req, res) => {
 });
 
 const allProducts = JSON.parse(
-  fs.readFileSync("./client/src/data/allproducts-data.json")
+  fs.readFileSync(__dirname + "/client/src/data/allproducts-data.json")
 );
 app.get("/api/allProducts", (req, res) => {
   res.status(200).json({
