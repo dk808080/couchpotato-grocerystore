@@ -10,17 +10,6 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.json());
 
-if (
-  process.env.NODE_ENV === "production" ||
-  process.env.NODE_ENV === "staging" ||
-  process.env.NODE_ENV === "development"
-) {
-  app.use(express.static("client/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join("/client/build/index.html"));
-  });
-}
-
 mongoose.connect(
   "mongodb+srv://admin-dimpal:abhinav@dimpal@couchpotato0.wqtxd.mongodb.net/couchpotatoDB?retryWrites=true&w=majority",
   {
@@ -157,12 +146,14 @@ app.get("/api/allProducts", (req, res) => {
   res.status(200).json({
     status: "sucess",
     data: {
-      allProducts,
+      allProducts: allProducts,
     },
   });
 });
 /*eeeennnnnnnnnnnnndddddddddddddddd offffffffffffffffff apppiiiiiiiiiiiiiiiii*/
-
+app.get("/", (req, res) => {
+  res.send("this is home of server");
+});
 const userSchema = new mongoose.Schema({
   _id: String,
   name: String,
