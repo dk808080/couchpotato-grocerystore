@@ -13,13 +13,6 @@ Mongoose
 
 ## Steps to Run 
 Then in the project directory, you can run:
-## Tech stack 
-NodeJs<br/>
-ExpressJs<br/>
-EJs<br/>
-MongoDB <br/>
-Mongoose
-
 
 ### `cd server`
 to navigate to server folder
