@@ -1,6 +1,7 @@
 # couchpotato-grocerystore
 
-Couch Potato is also an E-Commerce platform used for the selling of grocery goods primarily found in convenience stores, home essentials and food supplies to its customers.
+Couch Potato is also an E-Commerce platform used for the selling of grocery goods primarily found in convenience stores, home essentials and food supplies to its customers. <br/>
+Hosted website - https://couch-potato-application.herokuapp.com/
 
 
 ## Tech stack 
