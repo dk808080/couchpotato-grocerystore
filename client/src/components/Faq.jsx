@@ -325,7 +325,7 @@ function Faq() {
                         <p>
                           We handover the receipt from the merchant to you at
                           the time of delivery. Also, you can look at your
-                          transaction history in the “My Orders” tab.
+                          transaction navigate in the “My Orders” tab.
                         </p>
                       </div>
                     </div>

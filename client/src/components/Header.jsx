@@ -1,20 +1,21 @@
 import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
 //import "font-awesome/css/font-awesome.min.css";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import getServerUrl from "../utils/getServerUrl";
 
 function Header() {
-  const history = useHistory();
+  const navigate = useNavigate();
   function logout(event) {
     event.preventDefault();
     axios
-      .get("/api/logout")
+      .get(`${getServerUrl()}/api/logout`)
       .then((res) => {
         if (window.confirm(res.data)) {
           localStorage.removeItem("loggedin");
           localStorage.removeItem("emailid");
-          history.push("/");
+          navigate("/");
           window.location.reload(true);
         }
       })
@@ -51,20 +52,26 @@ function Header() {
               <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
                 <ReactBootStrap.Nav className="mr-auto">
                   <ReactBootStrap.Form inline>
-                    <ReactBootStrap.FormControl
-                      type="text"
-                      placeholder="Search"
-                      className="mr-sm-2"
-                    />
-                    <ReactBootStrap.Button
-                      style={{
-                        border: "1px solid #fff",
-                        backgroundColor: "#0ab68b",
-                        color: "#000",
-                      }}
-                    >
-                      Search
-                    </ReactBootStrap.Button>
+                    <ReactBootStrap.Row>
+                      <ReactBootStrap.Col>
+                        <ReactBootStrap.FormControl
+                          type="text"
+                          placeholder="Search"
+                          className="mr-sm-4"
+                        />
+                      </ReactBootStrap.Col>
+                      <ReactBootStrap.Col>
+                        <ReactBootStrap.Button
+                          style={{
+                            border: "1px solid #fff",
+                            backgroundColor: "#0ab68b",
+                            color: "#000",
+                          }}
+                        >
+                          Search
+                        </ReactBootStrap.Button>
+                      </ReactBootStrap.Col>
+                    </ReactBootStrap.Row>
                   </ReactBootStrap.Form>
                 </ReactBootStrap.Nav>
                 <ReactBootStrap.Nav>

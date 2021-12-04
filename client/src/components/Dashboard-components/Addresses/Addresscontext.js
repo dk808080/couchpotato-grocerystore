@@ -1,6 +1,7 @@
 import React, { createContext } from "react";
 
 import axios from "axios";
+import getServerUrl from "../../../utils/getServerUrl";
 
 export const Addressprovider = createContext();
 
@@ -29,7 +30,7 @@ class Addresscontext extends React.Component {
 
   saveaddress = (newaddress) => {
     axios
-      .post("/api/saveaddress", newaddress)
+      .post(`${getServerUrl()}/api/saveaddress`, newaddress)
       .then((res) => {
         alert(res.data);
         window.location.reload(true);
@@ -41,7 +42,7 @@ class Addresscontext extends React.Component {
 
   deleteaddress = (addresstobedeleted) => {
     axios
-      .post("/api/deleteaddress", addresstobedeleted)
+      .post(`${getServerUrl()}/api/deleteaddress`, addresstobedeleted)
       .then((res) => {
         alert(res.data);
         window.location.reload(true);

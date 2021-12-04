@@ -1,12 +1,11 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import swal from "sweetalert";
 import "../css/allproducts.css";
-import CardColumns from "react-bootstrap/CardColumns";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import getServerUrl from "../utils/getServerUrl";
+
 function Product(props) {
-  const history = useHistory();
+  const navigate = useNavigate();
   return (
     <div className="card mb-3" style={{ backgroundColor: "#f5f5f2" }}>
       <div className="row no-gutters">
@@ -46,10 +45,10 @@ function Product(props) {
                 };
                 event.preventDefault();
                 axios
-                  .post("/api/addtocart", product)
+                  .post(`${getServerUrl()}/api/addtocart`, product)
                   .then((res) => {
                     alert(res.data);
-                    history.push("/cart");
+                    navigate("/cart");
                   })
                   .catch((err) => {
                     console.log(err);

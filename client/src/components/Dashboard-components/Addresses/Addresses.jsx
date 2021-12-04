@@ -6,12 +6,14 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Addressprovider } from "./Addresscontext";
 import Addaddresses from "./Addaddresses";
+import getServerUrl from "../../../utils/getServerUrl";
+
 function Addresses() {
   const [addresses, setaddresses] = useState([]);
   const obj = useContext(Addressprovider);
   useEffect(() => {
     axios
-      .get("/api/bodyaddresses")
+      .get(`${getServerUrl()}/api/bodyaddresses`)
       .then((res) => {
         const myadd = [];
         res.data.map((add) => {

@@ -1,12 +1,14 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import getServerUrl from "../utils/getServerUrl";
+
 function Deactivateaccount() {
-  const history = useHistory();
+  const navigate = useNavigate();
   function dontdelete(event) {
     event.preventDefault();
     alert("we are happy to know that you want to be with us");
-    history.push("/home");
+    navigate("/home");
   }
   function deleteacc(event) {
     event.preventDefault();
@@ -19,12 +21,12 @@ function Deactivateaccount() {
       )
     ) {
       axios
-        .post("/api/deleteacc", user)
+        .post(`${getServerUrl()}/api/deleteacc`, user)
         .then((res) => {
           alert(res.data);
           localStorage.removeItem("emailid");
           localStorage.removeItem("loggedin");
-          history.push("/home");
+          navigate("/home");
           window.location.reload(true);
         })
         .catch((err) => {

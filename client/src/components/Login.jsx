@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Weblogo from "./Weblogo";
-import swal from "sweetalert";
+import getServerUrl from "../utils/getServerUrl";
 import "../css/login-signup.css";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function Login() {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function validate(event) {
     event.preventDefault();
@@ -20,12 +20,12 @@ function Login() {
       password: password,
     };
     axios
-      .post("/api/validateuser", user)
+      .post(`${getServerUrl()}/api/validateuser`, user)
       .then((res) => {
         alert(res.data);
         localStorage.setItem("loggedin", "loggedin");
         localStorage.setItem("emailid", email);
-        history.push("/home");
+        navigate("/home");
         window.location.reload(true);
       })
       .catch((err) => {
@@ -62,15 +62,16 @@ function Login() {
           />
         </Form.Group>
 
-        <Button
-          style={{ backgroundColor: "#028174", border: "none" }}
-          type="submit"
-          size="lg"
-          block
-        >
-          Login
-        </Button>
+
         <div className="innercontainer-login-form">
+          <Button
+            style={{ backgroundColor: "#028174", border: "none", marginRight:"2rem" }}
+            type="submit"
+            size="lg"
+            block
+          >
+            Login
+          </Button>
           <Button
             className="cancel-button"
             variant="danger"

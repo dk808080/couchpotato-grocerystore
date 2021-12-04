@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import getServerUrl from "../../../utils/getServerUrl";
 
 function Reviews() {
   const [items, setitems] = useState([]);
 
   useEffect(() => {
     axios
-      .get("/api/bodyoverviews")
+      .get(`${getServerUrl()}/api/bodyoverviews`)
       .then((res) => {
         setitems(res.data);
       })

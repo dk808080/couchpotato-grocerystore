@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import getServerUrl from "../../utils/getServerUrl";
 
 function Orderdetails() {
   const [items, setitems] = useState([]);
   let sum = 0;
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
-      .get("/api/bodycart")
+      .get(`${getServerUrl()}/api/bodycart`)
       .then((res) => {
         const myorder = [];
         res.data.map((order) => {
@@ -31,7 +31,7 @@ function Orderdetails() {
     event.preventDefault();
 
     if (window.confirm("If you want to place this order then press OK")) {
-      history.push("/chooseaddress");
+      navigate("/chooseaddress");
     }
   }
   items.forEach((item) => {

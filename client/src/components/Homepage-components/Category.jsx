@@ -1,13 +1,12 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import CardDeck from "react-bootstrap/CardDeck";
-import Card from "react-bootstrap/Card";
+import {Container} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 
 function Category() {
   return (
     <Container id="category">
       <h1 className="savers_h1">Shop By Category</h1>
-      <CardDeck>
+      <div style={{display:"flex"}}>
         <Card className="save_card">
           <Card.Img
             variant="top"
@@ -53,7 +52,7 @@ function Category() {
             <Card.Title>Healthy Food</Card.Title>
           </Card.Body>
         </Card>
-      </CardDeck>
+      </div>
     </Container>
   );
 }

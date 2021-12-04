@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import getServerUrl from "../../../utils/getServerUrl";
 
 function Addreview() {
   const [username, setusername] = useState("");
   const [title, settitle] = useState("");
   const [content, setcontent] = useState("");
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function addit(event) {
     event.preventDefault();
@@ -17,10 +18,10 @@ function Addreview() {
     };
 
     axios
-      .post("/api/addreview", review)
+      .post(`${getServerUrl()}/api/addreview`, review)
       .then((res) => {
         alert(res.data);
-        history.push("/reviews");
+        navigate("/reviews");
       })
       .catch((err) => {
         console.log(err);

@@ -6,12 +6,14 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Cardprovider } from "./Cardcontext";
 import Addcards from "./Addcards";
+import getServerUrl from "../../../utils/getServerUrl";
+
 function Cards() {
   const [cards, setcards] = useState([]);
   const obj = useContext(Cardprovider);
   useEffect(() => {
     axios
-      .get("/api/bodycards")
+      .get(`${getServerUrl()}/api/bodycards`)
       .then((res) => {
         const mycards = [];
         res.data.map((card) => {

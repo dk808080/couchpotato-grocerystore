@@ -2,7 +2,7 @@ import React from "react";
 import Homepage from "./components/Homepage";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Dashboard from "./components/Dashboard";
@@ -28,175 +28,311 @@ import Deactivateaccount from "./components/Deactivateaccount";
 import Reviews from "./components/Dashboard-components/Reviews-components/Reviews";
 import Addreview from "./components/Dashboard-components/Reviews-components/Addreview";
 import Navreview from "./components/Dashboard-components/Reviews-components/Navreview";
-import axios from "axios";
 import Buynow from "./components/Dashboard-components/Buynow";
 import Orderdetails from "./components/Dashboard-components/Orderdetails";
 import Chooseadd from "./components/Dashboard-components/Chooseadd";
 import Confirmmobileno from "./components/Dashboard-components/Confirmmobileno";
 import Paymentmethod from "./components/Dashboard-components/Paymentmethod";
 import Orders from "./components/Dashboard-components/Orders";
+
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Header />
-        <Route path="/" component={Homepage} exact />
-        <Route path="/home" component={Homepage} exact />
-        <Route path="/login" component={Login} exact />
-        <Route path="/signup" component={Signup} exact />
-        <Route path="/dashboard" component={Dashboard} exact />
+      <Routes>
+        <Route path="/" element={
+            <div>
+              <Header />
+              <Homepage/>
+              <Footer/>
+            </div>
+          } exact />
+        <Route path="/home" element={
+            <div>
+              <Header />
+              <Homepage/>
+              <Footer/>
+            </div>
+          } exact />
+        <Route path="/login" element={
+            <div>
+              <Header />
+              <Login/>
+              <Footer/>
+            </div>
+         } exact />
+        <Route path="/signup" element={
+            <div>
+              <Header />
+              <Signup/>
+              <Footer/>
+            </div>
+         } exact />
+        <Route path="/dashboard" element={
+            <div>
+              <Header />
+              <Dashboard/>
+              <Footer/>
+            </div>
+         } exact />
 
         <Route
           path="/cart"
-          component={() => (
+          element={
             <div
               style={{
                 backgroundImage: 'url("https://i5.peapod.com/c/H9/H952X.jpg")',
               }}
             >
+              <Header/>
               <Sidemenu />
               <Cart />
+              <Footer/>
             </div>
-          )}
+         }
           exact
         />
         <Route
           path="/orders"
-          component={() => (
+          element={
             <div
               style={{
                 backgroundImage: 'url("https://i5.peapod.com/c/H9/H952X.jpg")',
               }}
             >
+              <Header/>
               <Sidemenu />
               <Orders />
+              <Footer/>
             </div>
-          )}
+         }
           exact
         />
         <Route
           path="/notifications"
-          component={() => (
+          element={
             <div
               style={{
                 backgroundImage: 'url("https://i5.peapod.com/c/H9/H952X.jpg")',
               }}
             >
+              <Header/>
               <Sidemenu />
               <Allnotifications />
+              <Footer/>
             </div>
-          )}
+         }
           exact
         />
         <Route
           path="/addresses"
-          component={() => (
+          element={
             <div
               style={{
                 backgroundImage: 'url("https://i5.peapod.com/c/H9/H952X.jpg")',
               }}
             >
+              <Header/>
               <Sidemenu />
               <Manageaddresses />
+              <Footer/>
             </div>
-          )}
+         }
           exact
         />
         <Route
           path="/cards"
-          component={() => (
+          element={
             <div
               style={{
                 backgroundImage: 'url("https://i5.peapod.com/c/H9/H952X.jpg")',
               }}
             >
+              <Header/>
               <Sidemenu />
               <Managecards />
+              <Footer/>
             </div>
-          )}
+         }
           exact
         />
         <Route
           path="/buynow"
-          component={() => (
+          element={
             <div>
+              <Header/>
               <Buynow />
               <Orderdetails />
+              <Footer/>
             </div>
-          )}
+         }
           exact
         />
         <Route
           path="/chooseaddress"
-          component={() => (
+          element={
             <div>
+              <Header/>
               <Buynow />
               <Chooseadd />
+              <Footer/>
             </div>
-          )}
+         }
           exact
         />
         <Route
           path="/confirmmobileno"
-          component={() => (
+          element={
             <div>
+              <Header/>
               <Buynow />
               <Confirmmobileno />
+              <Footer/>
             </div>
-          )}
+         }
           exact
         />
         <Route
           path="/choosepaymentmethod"
-          component={() => (
+          element={
             <div>
+              <Header/>
               <Buynow />
               <Paymentmethod />
+              <Footer/>
             </div>
-          )}
+         }
           exact
         />
-        <Route path="/food-beverages" component={Beverages} exact />
-        <Route path="/food-dairy" component={Dairy} exact />
-        <Route path="/food-fruits" component={Fruits} exact />
-        <Route path="/food-vegetables" component={Vegetables} exact />
+        <Route path="/food-beverages" element={
+            <div>
+              <Header />
+              <Beverages/>
+              <Footer/>
+            </div>
+         } exact />
+        <Route path="/food-dairy" element={
+            <div>
+              <Header />
+              <Dairy/>
+              <Footer/>
+            </div>
+         } exact />
+        <Route path="/food-fruits" element={
+            <div>
+              <Header />
+              <Fruits/>
+              <Footer/>
+            </div>
+         } exact />
+        <Route path="/food-vegetables" element={
+            <div>
+              <Header />
+              <Vegetables/>
+              <Footer/>
+            </div>
+         } exact />
 
-        <Route path="/festival-diwali" component={Diwali} exact />
-        <Route path="/festival-rakhi" component={Rakhi} exact />
+        <Route path="/festival-diwali" element={
+            <div>
+              <Header />
+              <Diwali/>
+              <Footer/>
+            </div>
+         } exact />
+        <Route path="/festival-rakhi" element={
+            <div>
+              <Header />
+              <Rakhi/>
+              <Footer/>
+            </div>
+         } exact />
 
-        <Route path="/winter-winter" component={Winter} exact />
+        <Route path="/winter-winter" element={
+            <div>
+              <Header />
+              <Winter/>
+              <Footer/>
+            </div>
+         } exact />
 
-        <Route path="/grocery-edibleoils" component={Edibleoils} exact />
-        <Route path="/grocery-flours" component={Flours} exact />
-        <Route path="/grocery-grains" component={Grains} exact />
-        <Route path="/grocery-spices" component={Spices} exact />
+        <Route path="/grocery-edibleoils" element={
+            <div>
+              <Header />
+              <Edibleoils/>
+              <Footer/>
+            </div>
+         } exact />
+        <Route path="/grocery-flours" element={
+            <div>
+              <Header />
+              <Flours/>
+              <Footer/>
+            </div>
+         } exact />
+        <Route path="/grocery-grains" element={
+            <div>
+              <Header />
+              <Grains/>
+              <Footer/>
+            </div>
+         } exact />
+        <Route path="/grocery-spices" element={
+            <div>
+              <Header />
+              <Spices/>
+              <Footer/>
+            </div>
+         } exact />
 
-        <Route path="/allproducts" component={Allproducts} exact />
-        <Route path="/helpnfaq" component={Faq} exact />
+        <Route path="/allproducts" element={
+            <div>
+              <Header />
+              <Allproducts/>
+              <Footer/>
+            </div>
+         } exact />
+        <Route path="/helpnfaq" element={
+            <div>
+              <Header />
+              <Faq/>
+              <Footer/>
+            </div>
+         } exact />
 
-        <Route path="/deactivateaccount" component={Deactivateaccount} exact />
+        <Route path="/deactivateaccount"  element={
+            <div>
+              <Header />
+              <Deactivateaccount/>
+              <Footer/>
+            </div>
+         } exact />
 
         <Route
           path="/reviews"
-          component={() => (
+          element={
             <div>
+              <Header />
               <Navreview />
               <Reviews />
+              <Footer/>
             </div>
-          )}
+         }
           exact
         />
         <Route
           path="/addreview"
-          component={() => (
+          element={
             <div>
+              <Header />
               <Navreview />
               <Addreview />
+              <Footer />
             </div>
-          )}
+         }
           exact
         />
-        <Footer />
+        </Routes>
       </BrowserRouter>
     </div>
   );

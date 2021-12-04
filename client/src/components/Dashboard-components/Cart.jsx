@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../../css/dashboard-css/cart.css";
+import getServerUrl from "../../utils/getServerUrl";
+
 function Cart() {
   const [items, setitems] = useState([]);
 
   useEffect(() => {
     axios
-      .get("/api/bodycart")
+      .get(`${getServerUrl()}/api/bodycart`)
       .then((res) => {
         const mycart = [];
         res.data.map((cart) => {

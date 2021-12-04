@@ -1,21 +1,22 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../../css/dashboard-css/sidemenu.css";
 import axios from "axios";
+import getServerUrl from "../../utils/getServerUrl";
 
 function Sidemenu() {
-  const history = useHistory();
+  const navigate = useNavigate();
   function logout(event) {
     event.preventDefault();
     axios
-      .get("/api/logout")
+      .get(`${getServerUrl()}/api/logout`)
       .then((res) => {
         if (window.confirm(res.data)) {
           localStorage.removeItem("loggedin");
           localStorage.removeItem("emailid");
-          history.push("/");
+          navigate("/");
           window.location.reload(true);
         }
       })

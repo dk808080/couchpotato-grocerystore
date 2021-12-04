@@ -1,10 +1,10 @@
 import React, { useState, useContext } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { Grid, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import "../../../css/dashboard-css/cards.css";
-import axios from "axios";
 import { Cardprovider } from "./Cardcontext";
+
 function Addcards() {
   const [name, setname] = useState("");
   const [cardnumber, setcardnumber] = useState("");
@@ -35,7 +35,7 @@ function Addcards() {
       <div className="sec-addcard">
         <h1>Add new card</h1>
         <Form>
-          <Form.Row>
+          <Row style={{marginBottom:"1rem"}}>
             <Form.Group as={Col} controlId="formGridPassword">
               <Form.Control
                 type="tel"
@@ -62,9 +62,9 @@ function Addcards() {
                 required
               />
             </Form.Group>
-          </Form.Row>
+          </Row>
 
-          <Form.Row>
+          <Row style={{marginBottom:"1rem"}}>
             <Form.Group as={Col} controlId="formGridCity">
               <Form.Control
                 type="text"
@@ -88,7 +88,7 @@ function Addcards() {
                 required
               />
             </Form.Group>
-          </Form.Row>
+          </Row>
 
           <Button variant="outline-dark" type="submit" onClick={save}>
             SAVE

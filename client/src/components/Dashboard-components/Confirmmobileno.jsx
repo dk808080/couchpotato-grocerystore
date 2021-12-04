@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Button from "react-bootstrap/Button";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import getServerUrl from "../../utils/getServerUrl";
 
 function Confirmmobileno() {
   const [mobileno, setmobileno] = useState("");
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
-      .get("/api/bodypinfo")
+      .get(`${getServerUrl()}/api/bodypinfo`)
       .then((res) => {
         res.data.map((me) => {
           if (me._id == localStorage.getItem("emailid")) {
@@ -88,7 +89,7 @@ function Confirmmobileno() {
                 "If you have confirmed your phone number then press OK"
               )
             ) {
-              history.push("/choosepaymentmethod");
+              navigate("/choosepaymentmethod");
             }
           }}
         >

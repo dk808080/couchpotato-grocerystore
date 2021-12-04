@@ -1,9 +1,8 @@
 import React, { useState, useContext } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { Grid, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import "../../../css/dashboard-css/addresses.css";
-import axios from "axios";
 import { Addressprovider } from "./Addresscontext";
 function Addaddresses() {
   const [name, setname] = useState("");
@@ -36,7 +35,7 @@ function Addaddresses() {
       <div className="sec-addaddress">
         <h1>Add new address</h1>
         <Form>
-          <Form.Row>
+          <Row>
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label>Name</Form.Label>
               <Form.Control
@@ -63,7 +62,7 @@ function Addaddresses() {
                 required
               />
             </Form.Group>
-          </Form.Row>
+          </Row>
 
           <Form.Group controlId="formGridAddress1">
             <Form.Label>Address</Form.Label>
@@ -78,7 +77,7 @@ function Addaddresses() {
             />
           </Form.Group>
 
-          <Form.Row>
+          <Row>
             <Form.Group as={Col} controlId="formGridCity">
               <Form.Label>City</Form.Label>
               <Form.Control
@@ -105,7 +104,7 @@ function Addaddresses() {
                 required
               />
             </Form.Group>
-          </Form.Row>
+          </Row>
 
           <Button variant="outline-dark" type="submit" onClick={save}>
             SAVE

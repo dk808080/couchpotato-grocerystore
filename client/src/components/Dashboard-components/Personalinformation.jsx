@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import "../../css/dashboard-css/personalinfo.css";
 import axios from "axios";
+import getServerUrl from "../../utils/getServerUrl";
 
 function Personalinformation() {
   const [name, setname] = useState("");
@@ -19,7 +20,7 @@ function Personalinformation() {
       window.confirm("Do you really want to save these changes in your profile")
     ) {
       axios
-        .post("/api/savechangesinpinfo", user)
+        .post(`${getServerUrl()}/api/savechangesinpinfo`, user)
         .then((res) => {
           alert(res.data);
           window.location.reload(true);
@@ -32,7 +33,7 @@ function Personalinformation() {
 
   useEffect(() => {
     axios
-      .get("/api/bodypinfo")
+      .get(`${getServerUrl()}/api/bodypinfo`)
       .then((res) => {
         res.data.map((me) => {
           if (me._id == localStorage.getItem("emailid")) {

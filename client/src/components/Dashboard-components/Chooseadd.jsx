@@ -2,14 +2,16 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import getServerUrl from "../../utils/getServerUrl";
+
 function Chooseadd() {
   const [addresses, setaddresses] = useState([]);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
-      .get("/api/bodyaddresses")
+      .get(`${getServerUrl()}/api/bodyaddresses`)
       .then((res) => {
         const myadd = [];
         res.data.map((add) => {
@@ -43,7 +45,7 @@ function Chooseadd() {
                     "are you sure that you want to get your products delivered to this address?"
                   )
                 ) {
-                  history.push("/confirmmobileno");
+                  navigate("/confirmmobileno");
                 }
               }}
             >

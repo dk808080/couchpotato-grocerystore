@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import getServerUrl from "../../utils/getServerUrl";
 
 function Orders() {
   const [items, setitems] = useState([]);
 
   useEffect(() => {
     axios
-      .get("/api/bodyorders")
+      .get(`${getServerUrl()}/api/bodyorders`)
       .then((res) => {
         const myorders = [];
         res.data.map((order) => {

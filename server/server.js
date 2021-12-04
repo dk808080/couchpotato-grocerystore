@@ -3,22 +3,28 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const fs = require("fs");
+const cors = require("cors");
 const path = require("path");
 const saltRounds = 10;
+require("dotenv").config();
 
 const app = express();
 app.use(express.json());
 app.use(bodyParser.json());
+app.use(cors());
 
-mongoose.connect(
-  "mongodb+srv://admin-dimpal:abhinav@dimpal@couchpotato0.wqtxd.mongodb.net/couchpotatoDB?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
-mongoose.set("useFindAndModify", false);
-mongoose.set("useCreateIndex", true);
+// connection to database
+mongoose.connect(process.env.MONGOURI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+mongoose.connection.on("connected", (req, res) => {
+  console.log("connected to mongo");
+});
+mongoose.connection.on("error", (err) => {
+  console.log("error while connecting ", err);
+});
+
 /* appppppppppppppppiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
 
 const diwali = JSON.parse(fs.readFileSync("./data/festival/diwali-data.json"));

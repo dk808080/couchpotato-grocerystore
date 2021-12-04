@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import getServerUrl from "../../utils/getServerUrl";
 import Button from "react-bootstrap/Button";
 import swal from "sweetalert";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Paymentmethod() {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [items, setitems] = useState([]);
   useEffect(() => {
     axios
-      .get("/api/bodycart")
+      .get(`${getServerUrl()}/api/bodycart`)
       .then((res) => {
         const myorder = [];
         res.data.map((order) => {
@@ -77,7 +77,7 @@ function Paymentmethod() {
                     "your order has been placed successfully",
                     "success"
                   );
-                  history.push("/home");
+                  navigate("/home");
                 })
                 .catch((err) => {
                   console.log(err);

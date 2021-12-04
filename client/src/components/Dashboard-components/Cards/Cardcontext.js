@@ -1,13 +1,12 @@
 import React, { createContext } from "react";
-
+import getServerUrl from "../../../utils/getServerUrl";
 import axios from "axios";
 
 export const Cardprovider = createContext();
 
 class Cardcontext extends React.Component {
-  constructor() {
+  constructor(){
     super();
-
     this.state = {
       savecard: this.savecard,
       isadd: false,
@@ -29,7 +28,7 @@ class Cardcontext extends React.Component {
 
   savecard = (newcard) => {
     axios
-      .post("/api/savecard", newcard)
+      .post(`${getServerUrl()}/api/savecard`, newcard)
       .then((res) => {
         alert(res.data);
         window.location.reload(true);
