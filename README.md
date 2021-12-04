@@ -4,6 +4,7 @@ Couch Potato is also an E-Commerce platform used for the selling of grocery good
 Hosted website - https://couch-potato-application.herokuapp.com/
 
 <br/>
+
 ![alt homepage](https://github.com/dk808080/couchpotato-grocerystore/blob/master/home.PNG)
 
 ## Tech stack 
